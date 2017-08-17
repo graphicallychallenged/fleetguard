@@ -1,0 +1,152 @@
+/*------------------------------------------------------------------*/
+
+
+/* Cart Page */
+
+
+/*------------------------------------------------------------------*/
+
+.post-8 table {
+    width: 100%;
+}
+
+.post-8 table tr th {
+    border-bottom: 2px solid #eee;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 10px;
+    color: inherit;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.post-8 table tr th.product-remove {
+    width: 40px;
+}
+
+.post-8 table tr th.product-thumbnail {
+    width: 10px;
+}
+
+.post-8 table tr th.product-name {
+    text-align: left;
+}
+
+.post-8 table tr th.product-quantity {
+    float: none;
+    display: table-cell;
+}
+
+.post-8 table tr td {
+    border-bottom: 1px solid #eee;
+    padding: 15px 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.post-8 td.product-thumbnail img {
+    max-width: 80px;
+}
+
+.post-8 table tr td.product-name {
+    text-align: left;
+}
+
+.post-8 td.product-price {
+    color: inherit;
+    font-size: inherit;
+}
+
+.post-8 td.product-quantity,
+.post-8 td .product-quantity {
+    margin: 0;
+    float: none;
+    display: table-cell;
+}
+
+.post-8 td.product-quantity,
+.post-8 td.product-subtotal {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.post-8 .cart-product-table-wrap {
+    margin-bottom: 30px;
+}
+
+.post-8 .cart-actions {
+    margin-bottom: 80px;
+    display: flexbox;
+    flex-direction: row;
+}
+
+.post-8 .cart-collateral {
+    width: 100%;
+    clear: both;
+}
+
+.post-8 .cart-collateral .cart_totals {
+    background: #f8f8f8;
+    width: 100%;
+    max-width: 480px;
+    min-width: 320px;
+    float: right;
+    padding: 25px 15px 15px 15px;
+}
+
+.post-8 .cart-collateral .cart_totals h3 {
+    text-align: center;
+}
+
+.post-8 .cart-collateral .cart_totals div.responsive-table {
+    background: #fff;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.post-8 .cart-collateral .cart_totals table tr td {
+    text-align: right;
+}
+
+.post-8 .cart-collateral .cart_totals table tr th {
+    text-align: left;
+    text-transform: none;
+    border-width: 1px;
+}
+
+.post-8 .cart-collateral .cart_totals table tr td ul {
+    list-style: none;
+}
+
+.post-8 .cart-collateral .cart_totals table tr.order-total {
+    text-align: left;
+    border-width: 1px;
+}
+
+.post-8 .cart-collateral .cart_totals table tr.order-total th,
+.post-8 .cart-collateral .cart_totals table tr.order-total td {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 0px none;
+}
+
+ul#shipping_method {
+    list-style: none;
+}
+
+#shipping_method label {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.cart-collateral .cart_totals table .shipping a {
+    border-bottom: 1px solid;
+}
+
+.responsive-table {
+    overflow-x: auto;
+}

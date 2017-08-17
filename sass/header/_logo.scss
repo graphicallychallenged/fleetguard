@@ -1,0 +1,35 @@
+    /* Logo ---------------------------------------------*/
+    
+    .header-main .logo {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        margin-right: 28px;
+    }
+    
+    .header-main .logo a {
+        /*margin-bottom: 26px;*/
+        margin-top: 8px;
+        width: 120px;
+        display: block;
+    }
+    
+    .header-main .logo a img {
+        width: 100%;
+        vertical-align: middle;
+    }
+    
+    @media only screen and (max-width: 420px) {
+        .header-main .logo {
+            display: block;
+            margin: 30px auto 10px;
+            width: 100%;
+            float: none;
+        }
+        .header-main .logo a {
+            margin: 0 auto !important;
+        }
+        .sidebar-icon-nav ul li {
+            margin: 20px 12px !important;
+        }
+    }

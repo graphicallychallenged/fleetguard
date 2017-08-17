@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------*/
+
+
+/* Instagram Blocks */
+
+
+/*------------------------------------------------------------------*/
+
+.instagram h2,
+.instagram .page-title {
+    margin-bottom: 10px;
+}
+
+.instagram p {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.instagram ul li {
+    margin-right: 1.5%;
+    width: 18.5%;
+}
+
+.instagram ul li:last-child {
+    margin: 0;
+}
+
+.instagram ul,
+.instagram ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.instagram ul li {
+    display: inline-block;
+}

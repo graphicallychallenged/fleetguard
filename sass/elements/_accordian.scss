@@ -1,0 +1,24 @@
+/*------------------------------------------------------------------*/
+
+
+/* Accordian */
+
+
+/*------------------------------------------------------------------*/
+
+.jq-accordian .jq-accordionIcon {
+    position: absolute;
+    right: 0;
+}
+
+.jq-accordian .jq-accordionIcon::before {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-weight: normal;
+    color: #aaa;
+}
+
+.jq-accordian .is-active .jq-accordionIcon::before {
+    content: "\f106";
+    color: $color-1;
+}

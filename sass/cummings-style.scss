@@ -1,0 +1,47 @@
+// Cummings Filtration Sass Structure 
+// TOP Level includes
+//**all main changes should be done in this file**
+@import 'variables';
+//Plugin Styles
+@import 'plugins/owl.carousel';
+//BASIC Styles
+@import 'basic/general_styles';
+@import 'basic/typography';
+@import 'basic/buttons';
+@import 'basic/forms';
+@import 'basic/spacing';
+@import 'basic/page_styles';
+//HEADER Styles
+@import 'header/header';
+@import 'header/top_header';
+@import 'header/logo';
+@import 'header/navigation';
+//FOOTER Styles
+@import 'footer/footer';
+//ELEMENTS Styles
+@import 'elements/accordian';
+@import 'elements/breadcrumbs';
+@import 'elements/icons';
+@import 'elements/intro';
+@import 'elements/newsletter_popup';
+@import 'elements/pagination';
+@import 'elements/product_filter';
+@import 'elements/search_overlay';
+@import 'elements/share';
+@import 'elements/sidebar_menu';
+@import 'elements/toggle';
+@import 'elements/tooltip';
+@import 'elements/product_list';
+//Global Styles
+@import 'global/promo';
+@import 'global/promo_banner';
+@import 'global/slider';
+@import 'global/product';
+@import 'global/category_box';
+@import 'global/blog_box';
+@import 'global/about_box';
+@import 'global/newsletter';
+@import 'global/instagram';
+//Page Styles
+@import 'pages/blog_page';
+@import 'pages/blog_post';

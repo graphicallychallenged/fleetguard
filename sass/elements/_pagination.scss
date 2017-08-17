@@ -1,0 +1,82 @@
+/*------------------------------------------------------------------*/
+
+
+/* Pagination */
+
+
+/*------------------------------------------------------------------*/
+
+.pagination-wraper {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding: 30px 0;
+}
+
+.pagination-wraper>p {
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pagination {
+    float: right;
+    display: block;
+    vertical-align: middle;
+}
+
+ul.pagination-numbers,
+.pagination .pagination-numbers,
+.pagination-numbers {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    text-align: right;
+    width: 100%;
+}
+
+.pagination-numbers li {
+    display: inline-block;
+    float: left;
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding: 0 4px;
+}
+
+.pagination-numbers li a,
+.pagination-numbers li span {
+    background-color: #f6f6f6;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: 600;
+    height: 36px;
+    line-height: 35px;
+    padding: 0 12px;
+    transition: all 0.2s linear 0s;
+    color: #333;
+}
+
+.pagination-numbers li a:hover,
+.pagination-numbers li span:hover,
+.pagination-numbers li span.current,
+.pagination-numbers li a.current {
+    color: #fff;
+    background-color: $color-1;
+}
+
+.pagination-numbers li a.dots,
+.pagination-numbers li span.dots {
+    background-color: transparent;
+    border: medium none;
+    padding: 0;
+}
+
+.pagination-numbers li a.dots:hover,
+.pagination-numbers li span.dots:hover {
+    color: inherit;
+    background: inherit;
+}

@@ -1,0 +1,59 @@
+/*------------------------------------------------------------------*/
+
+
+/* Like Share Banner */
+
+
+/*------------------------------------------------------------------*/
+
+.like-share-inner {
+    padding: 20px 40px;
+    position: relative;
+    background-image: url("../img/bg/bg_6.jpg");
+    background-position: center center;
+    background-color: #333;
+    /* Old browsers */
+}
+
+.like-share-inner p,
+.like-share-inner h2,
+.like-share-inner h3,
+.like-share-inner h4 {
+    display: inline-block;
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.like-share-inner p a {
+    color: $color-1;
+}
+
+.social-icon {
+    float: right;
+    list-style: none;
+}
+
+.social-icon li {
+    display: inline-block;
+}
+
+.social-icon li a {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.social-icon li a:hover {
+    color: $color-1;
+}
+
+@media (max-width: 776px) {
+    .social-icon {
+        float: none;
+        margin-top: 15px;
+    }
+}

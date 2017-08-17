@@ -1,0 +1,128 @@
+/*==========================================================================================================*/
+
+
+/* FOOTER     ||---------------------------- */
+
+
+/*==========================================================================================================*/
+
+.footer {
+    background: #252525;
+}
+
+.copyrights {
+    text-align: center;
+}
+
+.copyrights p {
+    color: #fff;
+    margin: 0;
+}
+
+.copyrights p.copyright {
+    margin-bottom: 20px;
+}
+
+.copyrights a {
+    color: $color-1;
+}
+
+.copyrights a:hover {
+    text-decoration: underline;
+}
+
+.footer-newsletter {
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+    margin: 45px auto;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.footer-newsletter h3,
+.footer-newsletter h4 {
+    color: #ffffff;
+    display: inline-block;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.footer-newslettr-inner {
+    display: inline-block;
+}
+
+.footer-newslettr-inner input {
+    border: 1px solid #ffffff;
+    min-width: 320px;
+}
+
+.footer-block {
+    display: block;
+    margin: 0;
+}
+
+.footer-block p {
+    color: #acacac;
+    margin: 30px 0;
+}
+
+.footer-block .footer-social-icon li {
+    display: inline-block;
+    width: auto;
+    margin-right: 6px;
+}
+
+.footer-social-icon li a {
+    background: rgba(255, 255, 255, 0.13) none repeat scroll 0 0;
+    border-radius: 50px;
+    color: #ffffff !important;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    text-align: center;
+}
+
+.footer-social-icon li a:hover {
+    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+    color: #333 !important;
+}
+
+.footer-social-icon a:hover {
+    color: $color-1;
+}
+
+.footer-block h6 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer-block ul li {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 8px;
+    color: #acacac;
+    position: relative;
+}
+
+.footer-block ul li a {
+    color: #acacac;
+    margin: 0 auto;
+}
+
+.footer-block ul li a:hover {
+    color: $color-1;
+}
+
+.footer-block.contact-block li {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-block.contact-block li i {
+    position: absolute;
+    left: 0;
+    line-height: inherit;
+}

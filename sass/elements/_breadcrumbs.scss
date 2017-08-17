@@ -1,0 +1,39 @@
+/*------------------------------------------------------------------*/
+
+
+/* Bread Crumb */
+
+
+/*------------------------------------------------------------------*/
+
+.breadcrumb {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    background-image: url("../img/breadcrumb-bg.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.breadcrumb .breadcrumb-link {
+    font-size: 13px;
+    font-family: inherit;
+    text-align: left;
+    color: #333;
+}
+
+.breadcrumb .breadcrumb-link a {
+    font-weight: 600;
+}
+
+.breadcrumb .breadcrumb-link a:after {
+    content: "\f105";
+    font-weight: normal;
+    font-family: FontAwesome;
+    padding-right: 7px;
+    padding-left: 7px;
+    color: #333;
+}
+
+.breadcrumb .breadcrumb-link span {
+    color: #777;
+}

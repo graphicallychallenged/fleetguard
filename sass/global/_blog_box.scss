@@ -1,0 +1,81 @@
+/*------------------------------------------------------------------*/
+
+
+/* Blog Box */
+
+
+/*------------------------------------------------------------------*/
+
+.blog-box {
+    position: relative;
+}
+
+.blog-box .blog-img-wrap {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blog-box .blog-img-wrap img {
+    width: 100%;
+    height: auto;
+    transition: all 350ms ease-out 0s;
+    -moz-transition: all 350ms ease-out 0s;
+    -o-transition: all 350ms ease-out 0s;
+    -webkit-transition: all 350ms ease-out 0s;
+}
+
+.blog-box:hover .blog-img-wrap img {
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+}
+
+.blog-box .blog-box-content {
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.blog-box .blog-box-content .blog-box-content-inner {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 30px 40px;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.blog-box .blog-box-content .blog-title {
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.blog-box .blog-box-content .info {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.blog-box .blog-box-content .info span:after {
+    content: "/";
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.blog-box .blog-box-content .info span:last-child:after {
+    content: "";
+    padding: 0;
+    display: none;
+}
+
+.blog-title {
+    font-family: "Montserrat", sans-serif;
+    text-transform: none;
+}
+
+.blog-description-content {
+    margin-bottom: 25px;
+}

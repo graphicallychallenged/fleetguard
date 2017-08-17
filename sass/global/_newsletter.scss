@@ -1,0 +1,42 @@
+/*------------------------------------------------------------------*/
+
+
+/* Newsletter */
+
+
+/*------------------------------------------------------------------*/
+
+.newsletter {
+    text-align: center;
+}
+
+#form-newsletter {
+    max-width: 800px;
+    margin: 0 auto 15px;
+}
+
+.newsletter-from .form-input {
+    display: inline-block;
+    position: relative;
+}
+
+.newsletter-from input {
+    background: rgba(0, 0, 0, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #fff !important;
+    border-radius: 50px;
+    min-width: 450px;
+    padding: 12px 20px;
+    width: 100%;
+    outline: none;
+    transition: all 0.3s ease 0s !important;
+    -moz-transition: all 0.3s ease 0s !important;
+    -o-transition: all 0.3s ease 0s !important;
+    -webkit-transition: all 0.3s ease 0s !important;
+}
+
+.newsletter-from input:focus,
+.newsletter-from input:hover {
+    border-color: rgba(255, 255, 255, 0.30) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+}

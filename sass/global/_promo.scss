@@ -1,0 +1,62 @@
+/*------------------------------------------------------------------*/
+
+
+/* Promo */
+
+
+/*------------------------------------------------------------------*/
+
+.promo {
+    position: relative;
+}
+
+.promo-box {
+    background: #ffffff none repeat scroll 0 0;
+    /*border: 1px solid #eeeeee;*/
+    /*display: table;
+    clear: both;*/
+    padding: 10px 0px;
+    position: relative;
+    width: 100%;
+    /*box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);*/
+}
+
+.promo-box .promo-item {
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+
+.promo-box .promo-item:last-child,
+.promo-box .promo-item:nth-child(3) {
+    border-right: 0px none;
+}
+
+.promo-box .icon {
+    display: inline-table;
+    vertical-align: middle;
+}
+
+.promo-box .icon i {
+    font-size: 34px;
+}
+
+.promo-box .info {
+    padding-left: 15px;
+    text-align: left;
+    display: inline-table;
+    vertical-align: middle;
+}
+
+.promo-box h6 {
+    margin: 0 0 2px 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.promo-box p {
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 0;
+}

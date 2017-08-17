@@ -1,0 +1,23 @@
+/* Blog Single */
+
+.blog-single .blog-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.blog-single .blog-box .blog-box-content {
+    text-align: left;
+    padding: 0;
+}
+
+.blog-single .blog-box .blog-box-content .blog-box-content-inner {
+    transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    border: 0 none;
+    padding-left: 0;
+    padding-right: 0;
+}

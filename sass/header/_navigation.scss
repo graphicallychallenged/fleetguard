@@ -1,0 +1,415 @@
+/* Navigation Menu -----------------------------------------------*/
+
+.navigation-menu {
+    display: block;
+    float: left;
+    position: static;
+    text-transform: uppercase;
+}
+
+.navigation-menu ul>li>a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 29px 14px;
+    display: block;
+}
+
+.navigation-menu ul>li:hover>a {
+    color: $color-1;
+}
+
+.navigation-menu ul,
+.navigation-menu ul li {
+    list-style: none;
+}
+
+.navigation-menu>ul>li {
+    display: inline-block;
+}
+
+.menu-mobile {
+    background: #f0f0f0;
+    color: #333;
+    padding: 8px 15px;
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.menu-mobile:hover {
+    color: $color-1;
+}
+
+.navigation-menu ul>li>a>.nav-label-new,
+.navigation-menu ul>li>a>.nav-label-sale {
+    position: relative;
+    right: 0;
+}
+
+.navigation-menu ul>li>a>.nav-label-new:after {
+    content: "";
+    display: block;
+    height: 20px;
+    position: absolute;
+    top: -19px;
+    width: 28px;
+    background: url("../img/label_new.png") no-repeat left top;
+    z-index: 100;
+    right: -10px;
+}
+
+.navigation-menu ul>li>a>.nav-label-sale:after {
+    content: "";
+    display: block;
+    height: 20px;
+    position: absolute;
+    top: -19px;
+    width: 28px;
+    background: url("../img/label_sale.png") no-repeat left top;
+    z-index: 100;
+    right: -10px;
+}
+
+
+/* Navigation Dropdown Menu --------------------------------*/
+
+.nav-dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+    left: 0;
+    border-top: 1px solid #eeeeee;
+    padding: 30px 0 30px 0;
+}
+
+.nav-dropdown:after {
+    background: rgba(0, 0, 0, 0.08);
+    width: 100%;
+    bottom: -4px;
+    left: 0;
+    height: 4px;
+    position: inherit;
+    content: "";
+}
+
+.dropworn-arrow {
+    left: 50%;
+    margin-left: -10px;
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+
+.dropworn-arrow:after {
+    background: rgba(0, 0, 0, 0) url("../img/dropdown-top-arrow.png") no-repeat scroll left top;
+    content: "";
+    bottom: -1px;
+    height: 10px;
+    width: 20px;
+    position: absolute;
+    /*border-left: 1px solid #eee;
+        border-top: 1px solid #eee;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);*/
+}
+
+.nav-dropdown .new-label,
+.nav-dropdown .sale-label {
+    padding: 2px 4px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 5px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.nav-dropdown .sale-label {
+    background: #f55151;
+    color: #fff;
+}
+
+.nav-dropdown .new-label {
+    background: $color-1;
+    color: #fff;
+}
+
+.nav-dropdown .sub-banner {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    border: 0 none;
+}
+
+.nav-dropdown .nav-dropdown-grid {
+    width: 25%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    float: left;
+}
+
+.nav-dropdown .nav-dropdown-grid ul {
+    margin-bottom: 30px;
+}
+
+.nav-dropdown .nav-dropdown-grid ul li {
+    font-size: 14px;
+    text-transform: none;
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.nav-dropdown .nav-dropdown-grid ul li>a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 2px;
+    display: inline-block;
+    transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+
+.nav-dropdown .nav-dropdown-grid>ul>li:hover>a {
+    color: inherit;
+}
+
+.nav-dropdown .nav-dropdown-grid>ul>li>a:hover {
+    padding-left: 5px;
+    color: $color-1;
+}
+
+.menu-mobile:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    font-size: 20px;
+    padding: 0;
+    float: right;
+    position: relative;
+    top: 5px;
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+
+.menu-dropdown-icon:before {
+    content: "\f107";
+    font-family: "FontAwesome";
+    display: none;
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+    padding: 0;
+    /*margin-top: 10px;
+    margin-right: 15px;*/
+    color: #999;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    text-align: center;
+    vertical-align: middle;
+    background: #f6f6f6;
+    border: 1px solid #eee;
+}
+
+.show-on-mobile {
+    display: block !important;
+}
+
+
+/* Sticky Header */
+
+@media only screen and (min-width: 980px) {
+    .header-main.fixed .header-main-inner .logo a {
+        margin-top: 17px;
+        transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+    }
+    .header-main.fixed>.header-main-inner>.navigation-menu>ul>li>a {
+        padding-top: 21px;
+        padding-bottom: 20px;
+        transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+    }
+    .header-main.fixed .header-main-inner .header-rightside-nav .header-btn-link {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+    }
+    .header-main.fixed .header-main-inner .sidebar-icon-nav ul li {
+        margin-top: 20px;
+        margin-bottom: 19px;
+        transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+    }
+}
+
+
+/*Mobile style's*/
+
+@media only screen and (max-width: 979px) {
+    .navigation-menu {
+        display: block;
+        float: none;
+        position: relative;
+        text-transform: uppercase;
+        clear: both;
+        z-index: 99;
+    }
+    .navigation-menu ul>li>a {
+        padding: 8px 15px;
+        display: block;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+    }
+    .nav-dropdown .nav-dropdown-grid ul li>a {
+        border: none 0px;
+    }
+    .nav-dropdown .nav-dropdown-grid {
+        width: 100%;
+    }
+    .nav-dropdown {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    .navigation-menu>ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+    .navigation-menu>ul>li {
+        display: block;
+        margin-top: 1px;
+        background: #fff;
+    }
+    .nav-dropdown {
+        display: none;
+        position: relative;
+        width: 100%;
+        z-index: auto;
+        left: 0;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .menu-dropdown-icon:before {
+        display: inline-block;
+    }
+    .navigation-menu ul li a .nav-label-sale {
+        display: none;
+    }
+    .nav-dropdown>.container {
+        width: 100%;
+    }
+}
+
+
+/* Rightside Navigation ------------------------------------*/
+
+.header-rightside-nav {
+    float: right;
+}
+
+
+/* Login Register Link */
+
+.header-rightside-nav .header-btn-link {
+    border-right: 1px solid #eeeeee;
+    padding: 21px 30px 20px 0px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+.header-rightside-nav .header-btn-link a {
+    font-size: 13px;
+}
+
+.header-rightside-nav .header-btn-link a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 420px) {
+    .header-rightside-nav {
+        float: none;
+        width: 100% !important;
+        display: block;
+        clear: both;
+        text-align: center;
+    }
+}
+
+
+/* Sidebar Icon Navigation(Search, Whishlist, Cart) */
+
+.sidebar-icon-nav {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: -12px;
+    margin-left: 15px;
+}
+
+.sidebar-icon-nav ul li {
+    margin: 28px 11px 0px;
+}
+
+.sidebar-icon-nav ul li a {
+    position: relative;
+}
+
+.sidebar-icon-nav ul li .countTip {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    background: $color-1;
+    right: -10px;
+    top: -8px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.sidebar-icon-nav .cart-icon,
+.sidebar-icon-nav .cart-title {
+    display: inline-block;
+}
+
+.sidebar-icon-nav .cart-title {
+    font-size: 13px;
+}

@@ -1,0 +1,111 @@
+/*------------------------------------------------------------------*/
+
+
+/* Button Style */
+
+
+/*------------------------------------------------------------------*/
+
+.btn,
+button {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    vertical-align: middle;
+    transition: all 0.3s ease 0s !important;
+    -moz-transition: all 0.3s ease 0s !important;
+    -webkit-transition: all 0.3s ease 0s !important;
+    -o-transition: all 0.3s ease 0s !important;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+
+.btn i,
+button i,
+.btn i,
+button i {
+    margin-right: 6px;
+}
+
+.btn i.right,
+button i.right {
+    margin-left: 6px;
+    margin-right: 0px;
+}
+
+.btn-xs {
+    padding: 11px 30px !important;
+    display: inline-block;
+}
+
+.btn-sm {
+    padding: 13px 35px !important;
+    display: inline-block;
+}
+
+.btn-md {
+    padding: 15px 35px !important;
+    display: inline-block;
+}
+
+.btn-lg {
+    padding: 18px 45px !important;
+    display: inline-block;
+}
+
+.btn-black {
+    background-color: #333;
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.btn-black:hover {
+    background-color: #4b4b4b;
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.btn-color {
+    background-color: $color-1;
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.btn-color:hover {
+    background-color: #4ac2aa;
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.btn-gray {
+    background-color: #eee;
+    border-color: transparent;
+    color: #222 !important;
+}
+
+.btn-gray:hover {
+    background-color: #f4f4f4;
+    border-color: transparent;
+    color: #222 !important;
+}
+
+.btn-white {
+    background-color: #fff;
+    border-color: transparent;
+    color: #222 !important;
+}
+
+.btn-white:hover {
+    background-color: #f4f4f4;
+    border-color: transparent;
+    color: #34b79d !important;
+}

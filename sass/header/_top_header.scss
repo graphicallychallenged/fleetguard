@@ -1,0 +1,204 @@
+/*------------------------------------------------------------------*/
+
+
+/* Top Header */
+
+
+/*------------------------------------------------------------------*/
+
+.header-topbar {
+    display: table;
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    letter-spacing: 0.4px;
+}
+
+.header-topbar .topbar-left {
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-topbar .topbar-right {
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-topbar .topbar-right ul li {
+    text-align: left;
+    display: inline-block;
+}
+
+.header-topbar .topbar-right>ul>li>a {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.header-topbar .topbar-right ul li a:hover {}
+
+.header-topbar .topbar-right>ul>li:last-child>a {
+    margin-right: 0px;
+}
+
+
+/*Dropdown*/
+
+.dropdown-nav {
+    position: relative;
+}
+
+.dropdown-nav:hover>a {
+    color: $color-1;
+}
+
+.dropdown-nav .dropdown-menu {
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: #fff;
+    border: 1px solid #eee;
+    display: none;
+    z-index: 2000;
+    list-style: none;
+    margin: -4px 0 0 0;
+    padding: 15px;
+    text-transform: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-nav .dropdown-menu:before {
+    background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+    bottom: -3px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.dropdown-nav:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-nav .dropdown-menu ul li {
+    display: block;
+}
+
+.dropdown-nav .dropdown-menu a {
+    display: block;
+    line-height: 1;
+    padding: 8px 0px;
+}
+
+.divider {
+    border-bottom: 1px solid #eee;
+    outline: none;
+    width: 100%;
+    display: block;
+    min-height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 775px) {
+    .header-topbar .topbar-right>ul>li:last-child>a {
+        margin-right: 8px;
+    }
+    .header-topbar .topbar-right {
+        text-align: center;
+        float: none;
+        display: block;
+    }
+}
+
+@media (max-width: 1220px) {
+    .header-topbar,
+    .header-main {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .header-topbar,
+    .header-main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 979px) {
+    .header-main .logo {
+        display: inline-block;
+        margin: 20px auto;
+        width: auto;
+    }
+    .header-main .logo a {
+        margin-top: 10px !important;
+    }
+    .sidebar-icon-nav ul li {
+        margin: 28px 12px;
+    }
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+/* Header Bar */
+
+
+/*------------------------------------------------------------------*/
+
+.header-main {
+    position: relative;
+    z-index: 99;
+    display: table;
+    width: 100%;
+    background: #fff;
+}
+
+.header-main.fixed {
+    position: fixed;
+    z-index: 3000;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+.header-main.no-stick.fixed,
+.header-main.fixed.no-stick {
+    position: relative !important;
+    background: #fff;
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
+}
+
+
+/*.header-main::before {
+        position: absolute;
+        bottom: -4px;
+        height: 4px;
+        left: 0;
+        background: rgba(0,0,0,0.1);
+        width: 100%;
+        z-index: 1;
+        content: "";
+    }*/

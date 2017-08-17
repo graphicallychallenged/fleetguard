@@ -1,0 +1,183 @@
+/*------------------------------------------------------------------*/
+
+
+/* Promo Banner */
+
+
+/*------------------------------------------------------------------*/
+
+.promo-banner-wrap {
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+
+
+/*shine effect*/
+
+.promo-banner-wrap:after {
+    content: "";
+    position: absolute;
+    top: -300%;
+    left: -210%;
+    width: 200%;
+    height: 300%;
+    opacity: 0;
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    background: rgba(0, 0, 0, 0);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%) repeat scroll 0 0;
+    background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%) repeat scroll 0 0;
+    background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%) repeat scroll 0 0;
+    //filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff', GradientType=1);
+    /* IE6-9 */
+}
+
+.promo-banner-wrap:hover:after {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    -moz-transition-property: left, top, opacity;
+    -o-transition-property: left, top, opacity;
+    -webkit-transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    -moz-transition-duration: 0.7s, 0.7s, 0.15s;
+    -o-transition-duration: 0.7s, 0.7s, 0.15s;
+    -webkit-transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+}
+
+
+/*End shine effect*/
+
+.promo-banner-wrap .promo-image-wrap {
+    transition: all 700ms ease 0s;
+    -moz-transition: all 700ms ease 0s;
+    -o-transition: all 700ms ease 0s;
+    -webkit-transition: all 700ms ease 0s;
+    display: block;
+}
+
+.promo-banner-wrap .promo-image-wrap img {
+    width: 100%;
+}
+
+.promo-banner-wrap:hover .promo-image-wrap {
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    transition: all 700ms ease 0s;
+    -moz-transition: all 700ms ease 0s;
+    -o-transition: all 700ms ease 0s;
+    -webkit-transition: all 700ms ease 0s;
+}
+
+.promo-banner-wrap .promo-content-wrap {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.08);
+    color: #fff;
+    transition: all 350ms ease-out 0s;
+    -moz-transition: all 350ms ease-out 0s;
+    -o-transition: all 350ms ease-out 0s;
+    -webkit-transition: all 350ms ease-out 0s;
+}
+
+.promo-banner-wrap:hover .promo-content-wrap {
+    background: rgba(0, 0, 0, 0.30);
+    transition: all 350ms ease-out 0s;
+    -moz-transition: all 350ms ease-out 0s;
+    -o-transition: all 350ms ease-out 0s;
+    -webkit-transition: all 350ms ease-out 0s;
+}
+
+.promo-banner-wrap .promo-content-wrap .promo-content-wrap-inner {
+    top: 50%;
+    left: 0;
+    position: absolute;
+    padding: 45px 15px 45px 45px;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    max-width: 310px;
+}
+
+.promo-banner-wrap .promo-content-wrap .promo-content-wrap-inner h1,
+.promo-banner-wrap .promo-content-wrap .promo-content-wrap-inner h2,
+.promo-banner-wrap .promo-content-wrap .promo-content-wrap-inner h3,
+.promo-banner-wrap .promo-content-wrap .promo-content-wrap-inner h4,
+.promo-banner-wrap .promo-content-wrap .promo-content-wrap-inner h5,
+.promo-banner-wrap .promo-content-wrap .promo-content-wrap-inner h6 {
+    color: #fff;
+    margin-bottom: 20px;
+    transition: all 350ms ease-out 0s;
+    -moz-transition: all 350ms ease-out 0s;
+    -o-transition: all 350ms ease-out 0s;
+    -webkit-transition: all 350ms ease-out 0s;
+}
+
+.promo-banner-wrap .promo-content-wrap .promo-content-wrap-inner h2 {
+    font-size: 24px;
+}
+
+.promo-banner-wrap .promo-content-wrap .promo-content-wrap-inner .btn {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.promo-banner-wrap .promo-content-wrap .promo-content-wrap-inner.top {
+    top: 0;
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
+
+.promo-banner-wrap:hover .promo-content-wrap .promo-content-wrap-inner .btn {
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0;
+    transition: all 450ms ease-out 0s;
+    -moz-transition: all 450ms ease-out 0s;
+    -o-transition: all 450ms ease-out 0s;
+    -webkit-transition: all 450ms ease-out 0s;
+    /*margin-bottom: 0;*/
+}
+
+.promo-banner-wrap:hover .promo-content-wrap .promo-content-wrap-inner .banner-caption-text {
+    transition: all 350ms ease-out 0s;
+    -moz-transition: all 350ms ease-out 0s;
+    -o-transition: all 350ms ease-out 0s;
+    -webkit-transition: all 350ms ease-out 0s;
+}
+
+.promo-banner-wrap .promo-content-wrap .promo-content-wrap-inner .banner-caption-text.first {
+    margin-bottom: 12px;
+}
+
+.promo-banner-wrap .promo-content-wrap .promo-content-wrap-inner .banner-caption-text.second {
+    margin-bottom: -36px;
+}
+
+.promo-banner-wrap:hover .promo-content-wrap .promo-content-wrap-inner .banner-caption-text.second {
+    margin-bottom: 20px;
+}
+
+
+/*------------------------------------------------------------------*/

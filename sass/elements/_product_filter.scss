@@ -1,0 +1,60 @@
+/*------------------------------------------------------------------*/
+
+
+/* Product Filter Tab */
+
+
+/*------------------------------------------------------------------*/
+
+.product-filter,
+ul.product-filter {
+    position: relative;
+    margin: 0 auto 30px 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    display: block;
+}
+
+.product-filter li {
+    list-style: none;
+    display: inline-block;
+    border-right: 1px solid #eee;
+}
+
+.product-filter li:last-child {
+    border-right: 0px none;
+}
+
+.product-filter li a {
+    display: block;
+    padding: 0px 25px;
+    color: #999;
+}
+
+.product-filter li a.active,
+.product-filter li.active a {
+    color: #333;
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+/* Tabs */
+
+
+/*------------------------------------------------------------------*/
+
+.tab-content .tab-pane.active {
+    display: block;
+}
+
+.tab-content .tab-pane {
+    display: none;
+}

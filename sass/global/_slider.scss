@@ -1,0 +1,125 @@
+/* Slider Theme */
+
+
+/*------------------------------------------------------------------*/
+
+.nf-carousel-theme1 .owl-prev,
+.nf-carousel-theme1 .owl-next {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    border-radius: 50px;
+    height: 40px;
+    line-height: 38px;
+    margin-top: -30px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 40px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    font-size: 20px;
+    transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
+    -webkit-transition: all 0.25s ease 0s;
+}
+
+.nf-carousel-theme1:hover .owl-prev,
+.nf-carousel-theme1:hover .owl-next {
+    opacity: 1;
+}
+
+.nf-carousel-theme1 .owl-prev:hover,
+.nf-carousel-theme1 .owl-next:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+}
+
+.nf-carousel-theme1 .owl-prev i,
+.nf-carousel-theme1 .owl-next i {
+    color: #fff;
+}
+
+.nf-carousel-theme1 .owl-prev {
+    left: -50px;
+}
+
+.nf-carousel-theme1:hover .owl-prev {
+    left: -20px;
+}
+
+.nf-carousel-theme1 .owl-prev i {
+    margin-right: 2px;
+}
+
+.nf-carousel-theme1 .owl-next {
+    right: -50px;
+}
+
+.nf-carousel-theme1:hover .owl-next {
+    right: -20px;
+}
+
+.nf-carousel-theme1 .owl-next i {
+    margin-left: 2px;
+}
+
+.product-item-4 .owl-prev,
+.product-item-4 .owl-next,
+.product-item-5 .owl-prev,
+.product-item-5 .owl-next {
+    margin-top: -60px !important;
+}
+
+
+/* Blog Carousel */
+
+.blog-carousel .owl-prev,
+.blog-carousel .owl-next {
+    transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+
+/* Brand Carousel */
+
+.brand-logo-carousel .owl-item img {
+    max-width: 100%;
+    width: auto;
+    max-height: 70px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.brand-logo-carousel {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.brand-logo-carousel .owl-item {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.brand-logo-carousel .brand-item {
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nf-carousel-theme1 {
+        overflow: hidden;
+    }
+    .nf-carousel-theme1:hover .owl-next {
+        right: 5px;
+    }
+    .nf-carousel-theme1:hover .owl-prev {
+        left: 5px;
+    }
+}

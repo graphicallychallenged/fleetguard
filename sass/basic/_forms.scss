@@ -1,0 +1,211 @@
+/*------------------------------------------------------------------*/
+
+
+/* Form Style */
+
+
+/*------------------------------------------------------------------*/
+
+form {
+    position: relative;
+}
+
+button {
+    outline: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+    display: inline-block;
+}
+
+button,
+input,
+textarea,
+select {
+    font-size: 12px;
+}
+
+input,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="radio"],
+input[type="checkbox"],
+textarea,
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #fff;
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    border-radius: 55px;
+    color: #333;
+    outline: none;
+    font-weight: 400;
+    font-size: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -moz-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -o-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+    display: inline-block;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="number"]:hover,
+input[type="radio"]:hover,
+input[type="checkbox"]:hover,
+input[type="password"]:hover,
+textarea:hover,
+select:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    color: #333;
+}
+
+input.input-xs,
+.input-xs {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    height: 36px;
+}
+
+input.input-sm,
+.input-sm {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    height: 40px;
+}
+
+input.input-md,
+.input-md {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    height: 44px;
+}
+
+input.input-lg,
+.input-lg {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 50px;
+}
+
+.btn.fancy {
+    border-radius: 0 50px 50px 0;
+    vertical-align: middle;
+    margin-left: -5px;
+    display: inline-block;
+}
+
+input.fancy {
+    border-radius: 50px 0 0 50px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+textarea {
+    height: 120px;
+    font-size: 13px !important;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 15px;
+}
+
+label {
+    color: #333;
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding-right: 3px;
+    padding-left: 3px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: middle;
+    display: block;
+}
+
+label.left {
+    text-align: left;
+}
+
+label.inline-block {
+    margin-bottom: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input.block {
+    display: block;
+}
+
+.form-full-width {
+    width: 100%;
+}
+
+.form-center {
+    text-align: center;
+}
+
+.form-full-height {
+    height: 100%;
+}
+
+.form-field-wrapper {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+form .error {
+    border-color: #e1534f;
+}
+
+.form-required {
+    color: #f00;
+}
+
+form label.error {
+    margin-bottom: 0px;
+    margin-top: 3px;
+    color: #e1534f;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.successContent,
+.errorContent {
+    margin-bottom: 20px;
+    display: none;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+.form-border-box {
+    border: 1px solid #eee;
+    padding: 30px;
+}

@@ -1,0 +1,304 @@
+/*------------------------------------------------------------------*/
+
+
+/* Product Tabs */
+
+
+/*------------------------------------------------------------------*/
+
+.product-tabs-wrapper {
+    margin-top: 30px;
+}
+
+
+/* Tabs */
+
+.product-content-tabs {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: -1px;
+}
+
+.product-content-tabs {
+    text-align: center;
+}
+
+.product-content-tabs li {
+    display: inline-block;
+    list-style: none;
+}
+
+.product-content-tabs li a {
+    color: #777;
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid;
+    border-color: transparent;
+}
+
+.product-content-tabs li a.active {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+
+
+/* End Tabs */
+
+
+/*product content wraper*/
+
+.product-content-Tabs_wraper {
+    border: 1px solid #eee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.product-content-Tabs_wraper .product-collapse-title {
+    display: none;
+    margin-bottom: 2px;
+    background: #f6f6f6;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    font-weight: 400;
+}
+
+@media (min-width: 776px) {
+    .product-content-Tabs_wraper .collapse {
+        display: block;
+    }
+}
+
+@media (max-width: 775px) {
+    .product-content-tabs {
+        display: none;
+    }
+    .product-content-Tabs_wraper .product-collapse-title {
+        display: block;
+    }
+    .product-content-Tabs_wraper .product-collapse {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .product-content-Tabs_wraper .tab-pane {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/*Producr Description Table*/
+
+.shop_description p {
+    margin-bottom: 30px;
+}
+
+.shop_description ul {
+    padding-left: 30px;
+}
+
+.shop_description ul {
+    color: #777;
+}
+
+
+/*Producr Information Table*/
+
+.shop_attributes {
+    width: 100%;
+}
+
+.shop_attributes th {
+    color: #333;
+    font-size: 16px;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+table.shop_attributes th,
+table.shop_attributes td {
+    border-bottom: 1px solid #eee;
+    border-left: 0 none;
+    border-right: 0 none;
+    padding: 1.07em 0.71em;
+    vertical-align: top;
+}
+
+table.shop_attributes tr:last-child th,
+table.shop_attributes tr:last-child td {
+    border-bottom: 0px none;
+}
+
+table.shop_attributes th:last-child,
+table.shop_attributes td:last-child {
+    padding-right: 0;
+}
+
+
+/* Product Review --------------------*/
+
+.review-title {
+    margin-bottom: 30px;
+}
+
+
+/*Comment Form*/
+
+.single-product-content .comment-form .stars span a::after,
+.comment-form .stars span a::after {
+    font-family: FontAwesome;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.single-product-content .comment-form .stars span a,
+.comment-form .stars span a {
+    color: #ddd;
+}
+
+.single-product-content .comment-form .stars span a:hover,
+.single-product-content .comment-form .stars span a.active,
+.comment-form .stars span a:hover,
+.comment-form .stars span a.active {
+    color: #dc2028;
+}
+
+.single-product-content .comment-form .stars span a,
+.comment-form .stars span a {
+    display: inline-block;
+    font-size: 0;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.single-product-content .comment-form .stars span a.star-1::after,
+.comment-form .stars span a.star-1::after {
+    content: "\f005";
+}
+
+.single-product-content .comment-form .stars span a.star-2::after,
+.comment-form .stars span a.star-2::after {
+    content: "\f005\f005";
+}
+
+.single-product-content .comment-form .stars span a.star-3::after,
+.comment-form .stars span a.star-3::after {
+    content: "\f005\f005\f005";
+}
+
+.single-product-content .comment-form .stars span a.star-4::after,
+.comment-form .stars span a.star-4::after {
+    content: "\f005\f005\f005\f005";
+}
+
+.single-product-content .comment-form .stars span a.star-5::after,
+.comment-form .stars span a.star-5::after {
+    content: "\f005\f005\f005\f005\f005";
+}
+
+
+/*Comment Review*/
+
+.single-product-content .comments,
+.comments {}
+
+.single-product-content .comments .review-blank,
+.comments .review-blank {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.single-product-content .comments ul.commentlist,
+.comments ul.commentlist {
+    list-style: none;
+    padding: 0;
+}
+
+.single-product-content .comments ul.commentlist li,
+.comments ul.commentlist li {
+    margin-bottom: 45px;
+}
+
+.single-product-content .comments ul.commentlist li:last-child,
+.comments ul.commentlist li:last-child {
+    margin-bottom: 0px;
+}
+
+.commentlist .avatar {
+    float: left;
+    margin-right: 15px;
+    max-width: 60px;
+    width: 100%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.commentlist .comment-text {
+    padding-left: 90px;
+}
+
+.commentlist .comment-text .meta {
+    display: inline;
+}
+
+.commentlist .comment-text .meta strong {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+.commentlist .comment-text .meta time,
+.commentlist .comment-text .meta em {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.star-rating::before {
+    content: "\f006\f006\f006\f006\f006";
+    display: block;
+    font-family: "FontAwesome";
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.commentlist .comment-text .star-rating {
+    float: right;
+}
+
+.star-rating {
+    position: relative;
+}
+
+.star-rating span::before {
+    content: "\f005\f005\f005\f005\f005";
+    display: block;
+    font-family: "FontAwesome";
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.star-rating span {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 16px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+.commentlist .comment-text .description {
+    margin-top: 5px;
+}
+
+.commentlist .comment-text .description p {
+    margin-top: 0;
+}
+
+.commentlist .comment-text .description p:last-child {
+    margin-bottom: 0;
+}
