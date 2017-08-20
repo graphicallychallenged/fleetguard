@@ -63,25 +63,25 @@ button i.right {
 }
 
 .btn-black {
-    background-color: #333;
+    background-color: $button-dark;
     border-color: transparent;
     color: #fff !important;
 }
 
 .btn-black:hover {
-    background-color: #4b4b4b;
+    background-color: $button-dark-press;
     border-color: transparent;
     color: #fff !important;
 }
 
 .btn-color {
-    background-color: $color-1;
+    background-color: $button;
     border-color: transparent;
     color: #fff !important;
 }
 
 .btn-color:hover {
-    background-color: #4ac2aa;
+    background-color: $button-press;
     border-color: transparent;
     color: #fff !important;
 }
@@ -107,5 +107,5 @@ button i.right {
 .btn-white:hover {
     background-color: #f4f4f4;
     border-color: transparent;
-    color: #34b79d !important;
+    color: $button !important;
 }
