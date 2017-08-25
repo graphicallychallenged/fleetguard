@@ -27,6 +27,7 @@ input,
 textarea,
 select {
     font-size: 12px;
+    font-family: $main-font;
 }
 
 input,
@@ -145,7 +146,7 @@ label {
     font-weight: 400;
     text-transform: none;
     letter-spacing: 0px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font;
     vertical-align: middle;
     display: block;
 }

@@ -8,7 +8,7 @@
 }
 
 .navigation-menu ul>li>a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font;
     font-weight: 400;
     font-size: 13px;
     padding: 29px 14px;
@@ -32,7 +32,7 @@
     background: #f0f0f0;
     color: #333;
     padding: 8px 15px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font;
     display: none;
     font-size: 13px;
     font-weight: 400;
@@ -376,8 +376,8 @@
 .sidebar-icon-nav {
     display: inline-block;
     font-size: 18px;
-    margin-right: -12px;
-    margin-left: 15px;
+    // margin-right: -12px;
+    // margin-left: 15px;
 }
 
 .sidebar-icon-nav ul li {
