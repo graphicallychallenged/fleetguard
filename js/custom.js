@@ -1,8 +1,4 @@
-
-// Philos - Responsive Ecommerce Html Template
-// Created by Nileforest*/
-
-(function ($) {
+(function($) {
     "use strict";
 
     var $window = $(window);
@@ -12,7 +8,7 @@
     // ---------------------------------------------------------------------------------------------------------------------------->
     // Navigation Dropdown Function   ||-----------
     // ---------------------------------------------------------------------------------------------------------------------------->
-    $(function () {
+    $(function() {
         //Checks if li has sub (ul) and adds class for toggle icon - just an UI
         $('.navigation-menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
         // Dropdown Arrow Added
@@ -26,7 +22,7 @@
         var navMobileBtn = $(".menu-mobile");
 
         //If width is more than 943px Dropdowns are displayed on hover
-        navMenuLink.on('mouseenter mouseleave', function (e) {
+        navMenuLink.on('mouseenter mouseleave', function(e) {
             if ($window.width() > parseInt(winWidthSm)) {
                 $(this).children(".js-nav-dropdown").stop(true, false).fadeToggle(150);
                 $(this).children(".dropworn-arrow").stop(true, false).fadeToggle(150);
@@ -35,7 +31,7 @@
         });
 
         //If width is less or equal to winWidthSmpx dropdowns are displayed on click
-        navMenuLink.on('click', function () {
+        navMenuLink.on('click', function() {
             if ($window.width() <= parseInt(winWidthSm)) {
                 $(this).children(".js-nav-dropdown").fadeToggle(150);
                 $(this).children(".dropworn-arrow").hide();
@@ -43,7 +39,7 @@
         });
 
         //when clicked on mobile-menu, normal menu is shown as a list, classic rwd menu story
-        navMobileBtn.on('click', function (e) {
+        navMobileBtn.on('click', function(e) {
             $(".navigation-menu > ul").toggleClass('show-on-mobile');
             e.preventDefault();
         });
@@ -54,7 +50,7 @@
     // ---------------------------------------------------------------------------------------------------------------------------->
     // Sticky Header Function  ||-----------
     // ---------------------------------------------------------------------------------------------------------------------------->
-    $(function () {
+    $(function() {
         createSticky($("#header-sticky"));
 
         function createSticky(sticky) {
@@ -62,7 +58,7 @@
                 var pos = sticky.offset().top,
                     win = $window;
 
-                win.on("scroll", function () {
+                win.on("scroll", function() {
                     win.scrollTop() >= pos ? sticky.addClass("fixed") : sticky.removeClass("fixed");
                 });
             }
@@ -70,15 +66,14 @@
     });
 
     // "Sticky" Desktop Device Enable ---- small Device Disable
-    $window.bind('DOMContentLoaded load resize', function () {
+    $window.bind('DOMContentLoaded load resize', function() {
         var headerInnerHeight = $(".header").innerHeight(),
             winInnerWidth = $window.innerWidth();
 
         if (winInnerWidth <= parseInt(winWidthSm)) {
             $('#header-sticky').addClass('no-stick');
             $('.header').css("height", "auto");
-        }
-        else {
+        } else {
             $('#header-sticky').removeClass('no-stick');
             $('.header').css("height", headerInnerHeight);
         };
@@ -89,7 +84,7 @@
     // ---------------------------------------------------------------------------------------------------------------------------->
     // Elements  ||-----------
     // ---------------------------------------------------------------------------------------------------------------------------->
-    $(function () {
+    $(function() {
 
         // (1). Sidebar Menu Function (Cart Menu) =======================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
         var $menuSidebar = $('.sidebar-right');
@@ -99,7 +94,7 @@
         var $menuSidebarOverlayActive = $('.sidebar_overlay_active');
 
         /*sidebar menu navigation icon toggle*/
-        $menusidebarNav.on('click', function () {
+        $menusidebarNav.on('click', function() {
             $(this).toggleClass('active');
             $menuSidebar.toggleClass('sidebar-open');
             $menuSidebarOverlay.toggleClass('sidebar_overlay_active');
@@ -107,14 +102,14 @@
         });
 
         /*sidebar menu close icon*/
-        $menuSidebarclose.on('click', function () {
+        $menuSidebarclose.on('click', function() {
             $menusidebarNav.removeClass('active');
             $menuSidebar.removeClass('sidebar-open');
             $menuSidebarOverlay.removeClass('sidebar_overlay_active');
         });
 
         /*Overlay Active*/
-        $document.on('click touchstart', '.sidebar_overlay_active', function () {
+        $document.on('click touchstart', '.sidebar_overlay_active', function() {
             $menusidebarNav.toggleClass('active');
             $menuSidebar.toggleClass('sidebar-open');
             $menuSidebarOverlay.toggleClass('sidebar_overlay_active');
@@ -123,15 +118,15 @@
 
 
         // (2). Search Overlay Menu =======================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-        $(function () {
+        $(function() {
             var searchOverlayMenuBtn = $('#search-overlay-menu-btn'),
                 searchMenuClose = $('.search-overlay-menu, .search-overlay-menu .search-overlay-close');
 
-            searchOverlayMenuBtn.on('click', function (event) {
+            searchOverlayMenuBtn.on('click', function(event) {
                 $('.search-overlay-menu').addClass('open');
                 $('.search-overlay-menu > form > input[type="search"]').focus();
             });
-            searchMenuClose.on('click keyup', function (event) {
+            searchMenuClose.on('click keyup', function(event) {
                 if (event.target == this || event.target.className == 'search-overlay-close' || event.keyCode == 27) {
                     $(this).removeClass('open');
                 }
@@ -140,7 +135,7 @@
 
 
         // (3). Tabs (Tabs With OwlCarousel) =======================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
             $($(e.target).attr('href'))
                 .find('.owl-carousel')
                 .owlCarousel('invalidate', 'width')
@@ -155,7 +150,7 @@
 
         // (5) Backgrounds Image (Slider, Section, etc..) ===========>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
         var pageSection = $('.slide-bg-image, .bg-image');
-        pageSection.each(function (indx) {
+        pageSection.each(function(indx) {
             if ($(this).attr("data-background-img")) {
                 $(this).css("background-image", "url(" + $(this).data("background-img") + ")");
             }
@@ -171,7 +166,7 @@
             var nlpopup_expires = $("nlpopup").data("expires");
             var nlpopup_delay = $("nlpopup").data("delay") * 1500;
 
-            var open_nlpopup = function () {
+            var open_nlpopup = function() {
                 var topoffset = $document.scrollTop(),
                     viewportHeight = $window.height(),
                     $popup = $('#nlpopup');
@@ -185,7 +180,7 @@
                 $('#nlpopup, #nlpopup_overlay').fadeIn(500);
             };
 
-            $('.nlpopup_close, #nlpopup_overlay').on('click', function (e) {
+            $('.nlpopup_close, #nlpopup_overlay').on('click', function(e) {
                 $.cookie('nlpopup', 'closed', { expires: nlpopup_expires, path: '/' });
                 $('#nlpopup, #nlpopup_overlay').fadeOut(200);
                 e.preventDefault();
@@ -210,8 +205,8 @@
         var accordionHeader = $('ul.jq-accordian > li > a');
 
         /* Accordian */
-        accordianClick.on('click', function (e) {
-            accordianClick.each(function (i) {
+        accordianClick.on('click', function(e) {
+            accordianClick.each(function(i) {
                 if ($(this).next().is("ul") && $(this).next().is(":visible")) {
                     $(this).next().slideUp();
                 }
@@ -228,11 +223,10 @@
         });
 
         /* Accordian Icon */
-        accordianClick.on('click', function (e) {
+        accordianClick.on('click', function(e) {
             if ($(this).hasClass('is-active')) {
                 $(this).removeClass('is-active');
-            }
-            else {
+            } else {
                 /* close other content */
                 accordionHeader.not(this).removeClass('is-active');
                 $(this).addClass('is-active');
@@ -240,7 +234,7 @@
         });
 
         // (8) Price Range Slider ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-        $(function () {
+        $(function() {
             var min_price = $('#price_range_min').attr('data-min'),
                 max_price = $('#price_range_max').attr('data-max');
 
@@ -250,7 +244,7 @@
                 max: 1500,
                 values: [min_price, max_price],
                 step: 10,
-                slide: function (event, ui) {
+                slide: function(event, ui) {
                     $("#price-range-from-to").html("Price : <span class='from'>$" + ui.values[0] + "</span> &mdash; <span class='to'>$" + ui.values[1]);
                     $("#price_range_min").val(ui.values[0]);
                     $("#price_range_max").val(ui.values[1]);
@@ -263,29 +257,29 @@
         });
 
         // (9) Select Box ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-        $(function () {
+        $(function() {
             $('.nice-select-box').niceSelect();
         });
 
 
         // (10) Toggle  ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
         /*Slide Toggle*/
-        $('.slide-toggle-btn').on('click', function (e) {
+        $('.slide-toggle-btn').on('click', function(e) {
             $('#' + $(this).data('toggleTarget')).slideToggle(300);
         });
 
         //fade Toggle
-        $('.fade-toggle-btn').on('click', function (e) {
+        $('.fade-toggle-btn').on('click', function(e) {
             $('#' + $(this).data('toggleTarget')).fadeToggle(300);
         });
 
 
         // (11) Product Quantity '+', '-' ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-        $(function () {
+        $(function() {
             var qty_min = $('.quantity').attr("min");
             var qty_max = $('.quantity').attr("max");
 
-            $(".quantityPlus").on('click', function () {
+            $(".quantityPlus").on('click', function() {
                 var currentVal = parseInt($(this).next(".quantity").val(), 10);
                 var str = $("p:first").text();
                 if (currentVal != qty_max) {
@@ -293,7 +287,7 @@
                 }
             });
 
-            $(".quantityMinus").on('click', function () {
+            $(".quantityMinus").on('click', function() {
                 var currentVal = parseInt($(this).prev(".quantity").val(), 10);
                 if (currentVal != qty_min) {
                     $(this).prev(".quantity").val(currentVal - 1);
@@ -304,13 +298,13 @@
 
         // (12) product page - selecting color, selecting size, Grid/List View ==============================================================================
         /*Select Color*/
-        $('.color-selector .entry').on('click', function () {
+        $('.color-selector .entry').on('click', function() {
             $(this).parent().find('.active').removeClass('active');
             $(this).addClass('active');
         });
 
         /*Select Size*/
-        $('.size-selector .entry').on('click', function () {
+        $('.size-selector .entry').on('click', function() {
             $(this).parent().find('.active').removeClass('active');
             $(this).addClass('active');
         });
@@ -320,13 +314,13 @@
         var productGridBtn = $('.product-grid-switcher');
         var productItemsWrap = $('.product-list-item');
 
-        productListBtn.on('click', function (event) {
+        productListBtn.on('click', function(event) {
             event.preventDefault();
             productItemsWrap.addClass('product-list-view');
             productListBtn.addClass('product-view-icon-active')
             productGridBtn.removeClass('product-view-icon-active')
         });
-        productGridBtn.on('click', function (event) {
+        productGridBtn.on('click', function(event) {
             event.preventDefault();
             productItemsWrap.removeClass('product-list-view');
             productListBtn.removeClass('product-view-icon-active')
@@ -339,7 +333,7 @@
     // Carousel (Owl, Slick)  ||-----------
     // ---------------------------------------------------------------------------------------------------------------------------->
 
-    $(function () {
+    $(function() {
 
         //Product Item 5
         $('.product-item-5').owlCarousel({
@@ -564,11 +558,12 @@
     // Hero Slider ( Revolution Slider )  ||-----------
     // ---------------------------------------------------------------------------------------------------------------------------->
     revHeroSlider();
+
     function revHeroSlider() {
 
         var tpj = jQuery;
         var revapi1078;
-        tpj(document).ready(function () {
+        tpj(document).ready(function() {
             if (tpj("#rev_slider_1078_1").revolution == undefined) {
                 revslider_showDoubleJqueryError("#rev_slider_1078_1");
             } else {
@@ -614,8 +609,7 @@
                                 h_offset: 20,
                                 v_offset: 0
                             }
-                        }
-                    ,
+                        },
                         bullets: {
                             enable: true,
                             hide_onmobile: false,
