@@ -6,7 +6,6 @@
     <title>Fleetguard Filtration | Your #1 Source for Lube Filtration, Air Filtration, and more! </title>
     <meta name="description" content="Fleetguard Filtration | Your #1 Source for Lube Filtration, Air Filtration, and more!" />
     <meta name="keywords" content="Fleetguard Filtration | Your #1 Source for Lube Filtration, Air Filtration, and more!">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
@@ -38,7 +37,7 @@
             <img src="img/close-icon-white.png" alt="Newsletter Close" /></a>
         <!--End Close Button-->
 
-        <h3 class="mb-40">Join Fleetguard Mailing <br/>List </h3>
+        <h3 class="mb-40">Join Fleerguard Mailing List </h3>
         <p class="black mb-20">
             Find out all the inside details about
             <BR/> what's going on with our <br/> Fleetguard products!
@@ -155,7 +154,29 @@
     <div class="sidebar_overlay"></div>
     <!-- End Sidebar Menu (Cart Menu) -  ->
 
-   
+    <!-- Search Overlay Menu  -->
+    <section class="search-overlay-menu">
+        <!-- Close Icon -->
+        <a href="javascript:void(0)" class="search-overlay-close"></a>
+        <!-- End Close Icon -->
+        <div class="container">
+            <!-- Search Form -->
+            <form role="search" id="searchform" action="/search" method="get">
+                <div class="search-icon-lg">
+                    <img src="img/search-icon-lg.png" alt="" />
+                </div>
+                <label class="h6 normal search-input-label" for="search-query">Part, Application, & Cross Reference Search</label>
+                <input value="" name="q" type="search" placeholder="Search..." />
+                <button type="submit">
+                    <img src="img/search-lg-go-icon.png" alt="" />
+                </button>
+            </form>
+            <!-- End Search Form -->
+
+        </div>
+    </section>
+    <!-- End Search Overlay Menu ------------------------------------------------>
+
     <!--==========================================-->
     <!-- wrapper -->
     <!--==========================================-->
@@ -187,8 +208,9 @@
                                     <ul>
                                         <li><a href="login-register.html">My Account</a></li>
                                         <li><a href="#">Order History</a></li>
-                                        <li><a href="#">My Saved Favorites</a></li>
-                                        <li><a href="#">Checkout</a></li>
+                                        <li><a href="#">Returns</a></li>
+                                        <li><a href="#">My Wishlist</a></li>
+                                        <li><a href="checkout.html">Checkout</a></li>
                                     </ul>
                                     <span class="divider"></span>
                                     <ul>
@@ -199,7 +221,32 @@
                                 <!--End Dropdown-->
                             </li>
 
-                           
+                            <li class="dropdown-nav">
+                                <a href="#">USD<i class="fa fa-angle-down right" aria-hidden="true"></i></a>
+                                <!--Dropdown-->
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="#">USD</a></li>
+                                        <li><a href="#">EUR</a></li>
+                                        <li><a href="#">GBP</a></li>
+                                        <li><a href="#">AUD</a></li>
+                                    </ul>
+                                </div>
+                                <!--End Dropdown-->
+                            </li>
+
+                            <li class="dropdown-nav">
+                                <a href="#">Enlgish<i class="fa fa-angle-down right" aria-hidden="true"></i></a>
+                                <!--Dropdown-->
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="#">Spanish</a></li>
+                                        <li><a href="#">Another One</a></li>
+
+                                    </ul>
+                                </div>
+                                <!--End Dropdown-->
+                            </li>
                         </ul>
                     </div>
                     <!-- End Topbar Right -->
@@ -239,13 +286,13 @@
 
 
                                 <!-- Whishlist-->
-                                <li><a class="js_whishlist-btn"><i aria-hidden="true" class="fa fa-star"></i><span class="countTip">10</span></a></li>
+                                <li><a class="js_whishlist-btn"><i aria-hidden="true" class="fa fa-heart"></i><span class="countTip">10</span></a></li>
 
                                 <!-- Cart-->
                                 <li>
                                     <a id="sidebar_toggle_btn">
                                         <div class="cart-icon">
-                                            <i aria-hidden="true" class="fa fa-shopping-cart"></i>
+                                            <i aria-hidden="true" class="fa fa-shopping-bag"></i>
                                         </div>
 
                                         <div class="cart-title">
@@ -268,14 +315,14 @@
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
-                                <a href="#">Air Filters</a>
-                              
+                                <a href="#">Filtration</a>
+                                <!-- Drodown Menu ------->
                                 <ul class="nav-dropdown js-nav-dropdown">
                                     <li class="container">
                                         <ul class="row">
                                             <!--Grid 1-->
                                             <li class="nav-dropdown-grid">
-                                                 
+                                                <h6>Air Filtration</h6>
                                                 <ul>
                                                     <li><a href="#">NanoForce</a></li>
                                                     <li><a href="#">Direct Flow<span class="new-label">New</span></a></li>
@@ -283,46 +330,18 @@
                                                     <li><a href="#">Magnum RS</a></li>
                                                 </ul>
                                             </li>
-                                         
-
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <!-- End Drodown Menu -->
-                            </li>
-                            <li>
-                                <a href="#">Fuel Filters </a>
-                             
-                                <ul class="nav-dropdown js-nav-dropdown">
-                                    <li class="container">
-                                        <ul class="row">
-                                            <!--Grid 1-->
+                                            <!--Grid 2-->
                                             <li class="nav-dropdown-grid">
-                                                
+                                                <h6>Fuel Filtration</h6>
                                                 <ul>
                                                     <li><a href="#">Spin-on Filtration</a></li>
                                                     <li><a href="#">Fuel Processors</a></li>
 
                                                 </ul>
                                             </li>
-                                            
-                                          
-
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <!-- End Drodown Menu -->
-                            </li>
-                            <li>
-                                <a href="#">Lube Filters</a>
-
-                                <ul class="nav-dropdown js-nav-dropdown">
-                                    <li class="container">
-                                        <ul class="row">
-                                            <!--Grid 1-->
+                                            <!--Grid 3-->
                                             <li class="nav-dropdown-grid">
-                                                    
-
+                                                <h6>Lube Filtration</h6>
                                                 <ul>
                                                     <li><a href="#">Spin-On Filtration</a></li>
                                                     <li><a href="#">Centrifuge Filtration</a></li>
@@ -330,24 +349,12 @@
 
                                                 </ul>
                                             </li>
-
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <!-- End Drodown Menu -->
-                            </li>
-                            <li>
-                                <a href="#">Other Filters</a>
-                                <ul class="nav-dropdown js-nav-dropdown">
-                                    <li class="container">
-                                        <ul class="row">
-                                            <!--Grid 1-->
+                                            <!--Grid 4-->
                                             <li class="nav-dropdown-grid">
-
+                                                <h6>Other Filtration</h6>
                                                 <ul>
                                                     <li><a href="#">Hydraulic Filtration</a></li>
                                                     <li><a href="#">Transmission Filtration</a></li>
-
 
                                                 </ul>
                                             </li>
@@ -356,11 +363,61 @@
                                     </li>
                                 </ul>
                                 <!-- End Drodown Menu -->
-
                             </li>
-
                             <li>
-                                <a href="#">Crankcase Venilation<span class="nav-label-new"></span></a>
+                                <a href="#">Coolants and Chemicals</a>
+                                <!-- Drodown Menu ------->
+                                <ul class="nav-dropdown js-nav-dropdown">
+                                    <li class="container">
+                                        <ul class="row">
+                                            <!--Grid 1-->
+                                            <li class="nav-dropdown-grid">
+                                                <h6>Our Cooling Solutions</h6>
+                                                <ul>
+                                                    <li><a href="#">Conventional (Fleetcool)</a></li>
+                                                    <li><a href="#">Hybrid (Fleetcool EX & ES Compleat)</a></li>
+                                                    <li><a href="#">Organic Acid Technology (ES Compleat OAT) </a></li>
+                                                    <li><a href="#">Cleaners</a></li>
+                                                    <li><a href="#">Coolant Filtration</a></li>
+                                                    <li><a href="#">Analysis</a></li>
+                                                    <li><a href="#">Diesal Exhaust Fuel (DEF)</a></li>
+                                                    <li><a href="#">Additives</a></li>
+                                                </ul>
+                                            </li>
+                                            <!--Grid 2-->
+                                            <li class="nav-dropdown-grid">
+                                                <h6>Your Cooling System</h6>
+                                                <ul>
+                                                    <li><a href="#">Aluminum Corrosion</a></li>
+                                                    <li><a href="#">Cavitation or Liner Pitting</a></li>
+                                                    <li><a href="#">Scaling</a></li>
+                                                    <li><a href="#">Acidity</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <!--Grid 3-->
+                                            <li class="nav-dropdown-grid">
+                                                <h6>Coolant Videos</h6>
+                                                <ul>
+                                                    <li><a href="#">Fleetguard Hybrid Coolant</a></li>
+                                                    <li><a href="#">Fleetguard Coolants and Cooling System Protection</a></li>
+                                                    <li><a href="#">Coolants: What You Don't Know Can Hurt Your Engine</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="nav-dropdown-grid">
+                                                <a href="#" class="sub-banner">
+                                                    <img src="img/banner/banner_115145.jpg" alt="" /></a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- End Drodown Menu -->
+                            </li>
+                            <li>
+                                <a href="#">Crankcase Ventilation</a>
+
                                 <ul class="nav-dropdown js-nav-dropdown">
                                     <li class="container">
                                         <ul class="row">
@@ -378,6 +435,14 @@
                                     </li>
                                 </ul>
                                 <!-- End Drodown Menu -->
+                            </li>
+                            <li>
+                                <a href="#">Fluid Analysis</a>
+
+                            </li>
+
+                            <li>
+                                <a href="#">New Product Analysis<span class="nav-label-new"></span></a>
                             </li>
 
                         </ul>
@@ -1382,33 +1447,39 @@
                             <h6>About Us</h6>
                             <ul>
                                 <li><a href="#">Overview</a></li>
-                                <li><a href="https://www.cumminsfiltration.com/completesolution" target="_blank" title="Fleetguard Advantage">Fleetguard Advantage</a></li>
-                                <li><a href="https://www.cumminsfiltration.com/ourcustomers" target="_blank" title="Cummins Filtration Customers">Our Customers</a></li>
-                                <li><a href="https://www.cumminsfiltration.com/innovation" target="_blank" title="Cummins Filtration  Innovation">Innovation</a></li>
-                                <li><a href="https://www.cumminsfiltration.com/qualitycert" target="_blank" title="Cummins Filtration  Quality Certification">Quality Certification</a></li>
+                                <li><a href="#">Vision, Mission & Values</a></li>
+                                <li><a href="#">Corporate Responsibilty</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Fleetguard Advantage</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Cummins Corporate</a></li>
 
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-4 mb-sm-45">
                         <div class="footer-block links-block">
-                            <h6>Catalog Search</h6>
+                            <h6>Catalog</h6>
                             <ul>
-                                
-                                <li><a href="https://catalog.cumminsfiltration.com/catalog/CatalogSearch.do" target="_blank">Catalog Guide</a></li>
-                               
+                                <li><a href="#">Product/Application Search</a></li>
+                                <li><a href="#">Catalog Guide</a></li>
+                                <li><a href="#">Fleet Manager</a></li>
+                                <li><a href="#">Precleaner Sizing</a></li>
+                                <li><a href="#">Worksheet</a></li>
 
                             </ul>
                         </div>
-                        
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-4 mb-sm-45">
                         <div class="footer-block links-block">
                             <h6>Resources</h6>
                             <ul>
-                                <li><a href="#">Literature</a></li>                       
+                                <li><a href="#">Literature</a></li>
+                                <li><a href="#">Order Literature</a></li>
                                 <li><a href="#">Safety Data Sheets</a></li>
-                               
+                                <li><a href="#">Training</a></li>
+                                <li><a href="#">Cummins Merchandise</a></li>
+                                <li><a href="#">Emissions Support</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1416,7 +1487,10 @@
                         <div class="footer-block links-block">
                             <h6>Support</h6>
                             <ul>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Customer Support</a></li>
+                                <li><a href="#">Fleetguard Access</a></li>
+                                <li><a href="#">Warranty</a></li>
+                                <li><a href="#">FAQs</a></li>
                             </ul>
 
                         </div>
