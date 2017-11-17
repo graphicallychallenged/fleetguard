@@ -135,14 +135,43 @@
 
 .product-list-item {
     margin-top: 30px;
+    .product-item {
+        border-bottom: 1px solid #eeeeee;
+        padding-bottom:10px;
+    }
+    .input-sm{
+        float: left;
+        padding-left: 10px;
+        margin-right: 0px;
+        padding-right: 5px;
+
+    }
+    .btn-sm{
+        padding: 13px 14px !important;
+        display: inline-block;
+        float:left;
+
+    }
+    .single-variation-wrap{
+        margin-top:10px;
+        margin-bottom:15px;
+    }
+    
 }
 
 .product-list-item .product-item-element {
     margin-bottom: 30px;
 }
 
-.product-list-view {}
+.product-list-view {
+    .product-rating{
+        margin-left:20px;
+    }
+}
 
+.product-number{
+    font-size:.7em
+}
 .product-list-view .product-item-element {
     width: 100%;
     max-width: 100%;

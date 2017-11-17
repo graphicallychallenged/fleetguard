@@ -4,6 +4,7 @@
 @import 'variables';
 //Plugin Styles
 @import 'plugins/owl.carousel';
+@import 'plugins/nice-select';
 //BASIC Styles
 @import 'basic/general_styles';
 @import 'basic/typography';
@@ -30,6 +31,7 @@
 @import 'elements/search';
 @import 'elements/share';
 @import 'elements/sidebar_menu';
+@import 'elements/sidebar_widget';
 @import 'elements/toggle';
 @import 'elements/tooltip';
 @import 'elements/product_list';
