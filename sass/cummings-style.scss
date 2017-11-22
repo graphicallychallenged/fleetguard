@@ -5,6 +5,8 @@
 //Plugin Styles
 @import 'plugins/owl.carousel';
 @import 'plugins/nice-select';
+@import 'plugins/magnific-popup';
+
 //BASIC Styles
 @import 'basic/general_styles';
 @import 'basic/typography';
@@ -35,6 +37,13 @@
 @import 'elements/toggle';
 @import 'elements/tooltip';
 @import 'elements/product_list';
+//PRODUCT Styles
+@import 'product-detail/product_carousel';
+@import 'product-detail/product_content';
+@import 'product-detail/product_detail';
+@import 'product-detail/product_image';
+@import 'product-detail/product_tabs';
+@import 'product-detail/sidebar_widget';
 //Global Styles
 @import 'global/promo';
 @import 'global/promo_banner';
