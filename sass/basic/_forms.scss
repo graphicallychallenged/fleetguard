@@ -106,6 +106,7 @@ input.input-md,
     padding-top: 13px;
     padding-bottom: 13px;
     height: 44px;
+    
 }
 
 input.input-lg,
@@ -165,6 +166,17 @@ input.block {
     display: block;
 }
 
+a.sublink {
+    float:right;
+    color: $color-1;
+    text-decoration: none;  
+    font-size: 10px;
+}
+
+a.sublink:hover{
+text-decoration: underline;
+}
+
 .form-full-width {
     width: 100%;
 }
@@ -182,7 +194,7 @@ input.block {
     position: relative;
 }
 
-form .error {
+form .error, .parsley-error {
     border-color: #e1534f;
 }
 
@@ -190,13 +202,20 @@ form .error {
     color: #f00;
 }
 
-form label.error {
+form label.error, .parsley-type, .parsley-required, .parsley-min, .parsley-length, .parsley-equalto {
     margin-bottom: 0px;
-    margin-top: 3px;
+   // margin-top: 3px;
     color: #e1534f;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
 }
+
+.parsley-errors-list{
+    list-style: none;
+    margin-left: 20px;
+    li {}
+}
+
 
 .successContent,
 .errorContent {
@@ -210,3 +229,68 @@ form label.error {
     border: 1px solid #eee;
     padding: 30px;
 }
+
+
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid, input.parsley-error {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: $color-1;
+  }
+
+   .parsley-success{
+      background: rgba(189, 236, 182, 0.50) !important;
+      
+  }
+
+  .phone-number .col-xs-3::after{
+
+    //position:absolute;
+      // right: 5px;
+       color: black;
+       border: 0px solid;
+       top: 5px;
+   }
+   
+   .phone-number {
+    margin-left:5px; 
+
+    .col-xs-4{
+       width:25%;
+   }
+}
+   
+   .phone-number .col-xs-3, .phone-number .col-xs-4{
+   
+       padding-left:0;
+   }
+ 

@@ -1334,6 +1334,21 @@ ul.list-none-ib li,
   text-align: center !important;
 }
 
+/* line 301, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_general_styles.scss */
+.lines {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  line-height: 0.1em;
+  margin: 40px 0 50px;
+}
+
+/* line 307, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_general_styles.scss */
+.lines span {
+  background: #fff;
+  padding: 0 10px;
+}
+
 /*------------------------------------------------------------------*/
 /* Typography Style */
 /*------------------------------------------------------------------*/
@@ -1752,7 +1767,7 @@ input.input-md,
   height: 44px;
 }
 
-/* line 111, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 112, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 input.input-lg,
 .input-lg {
   padding-top: 16px;
@@ -1760,7 +1775,7 @@ input.input-lg,
   height: 50px;
 }
 
-/* line 118, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 119, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 .btn.fancy {
   border-radius: 0 50px 50px 0;
   vertical-align: middle;
@@ -1768,14 +1783,14 @@ input.input-lg,
   display: inline-block;
 }
 
-/* line 125, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 126, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 input.fancy {
   border-radius: 50px 0 0 50px;
   vertical-align: middle;
   display: inline-block;
 }
 
-/* line 131, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 132, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 textarea {
   height: 120px;
   font-size: 13px !important;
@@ -1785,7 +1800,7 @@ textarea {
   padding: 15px;
 }
 
-/* line 140, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 141, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 label {
   color: #333;
   font-size: 13px;
@@ -1800,64 +1815,82 @@ label {
   display: block;
 }
 
-/* line 154, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 155, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 label.left {
   text-align: left;
 }
 
-/* line 158, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 159, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 label.inline-block {
   margin-bottom: 0px;
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 164, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 165, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 input.block {
   display: block;
 }
 
-/* line 168, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 169, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+a.sublink {
+  float: right;
+  color: #dc2028;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/* line 176, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+a.sublink:hover {
+  text-decoration: underline;
+}
+
+/* line 180, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 .form-full-width {
   width: 100%;
 }
 
-/* line 172, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 184, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 .form-center {
   text-align: center;
 }
 
-/* line 176, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 188, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 .form-full-height {
   height: 100%;
 }
 
-/* line 180, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 192, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 .form-field-wrapper {
   margin-bottom: 20px;
   position: relative;
 }
 
-/* line 185, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
-form .error {
+/* line 197, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+form .error, .parsley-error {
   border-color: #e1534f;
 }
 
-/* line 189, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 201, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 .form-required {
   color: #f00;
 }
 
-/* line 193, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
-form label.error {
+/* line 205, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+form label.error, .parsley-type, .parsley-required, .parsley-min, .parsley-length, .parsley-equalto {
   margin-bottom: 0px;
-  margin-top: 3px;
   color: #e1534f;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
 }
 
-/* line 201, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 213, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+.parsley-errors-list {
+  list-style: none;
+  margin-left: 20px;
+}
+
+/* line 220, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 .successContent,
 .errorContent {
   margin-bottom: 20px;
@@ -1866,10 +1899,78 @@ form label.error {
   letter-spacing: 1px;
 }
 
-/* line 209, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+/* line 228, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
 .form-border-box {
   border: 1px solid #eee;
   padding: 30px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+/* line 235, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+input.invalid, input.parsley-error {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+/* line 240, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+.tab {
+  display: none;
+}
+
+/* line 245, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+/* line 250, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* line 261, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+/* line 266, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+.step.finish {
+  background-color: #dc2028;
+}
+
+/* line 270, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+.parsley-success {
+  background: rgba(189, 236, 182, 0.5) !important;
+}
+
+/* line 275, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+.phone-number .col-xs-3::after {
+  color: black;
+  border: 0px solid;
+  top: 5px;
+}
+
+/* line 284, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+.phone-number {
+  margin-left: 5px;
+}
+
+/* line 287, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+.phone-number .col-xs-4 {
+  width: 25%;
+}
+
+/* line 292, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
+.phone-number .col-xs-3, .phone-number .col-xs-4 {
+  padding-left: 0;
 }
 
 /*------------------------------------------------------------------*/
@@ -7285,6 +7386,44 @@ table.shop_attributes td:last-child {
   color: #fff;
 }
 
+/* line 174, /Users/nmereus/repo/fleetguard-ryder/sass/global/_product.scss */
+.ribbon-wrapper {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  z-index: 999;
+}
+
+/* line 182, /Users/nmereus/repo/fleetguard-ryder/sass/global/_product.scss */
+.ribbon-wrapper .ribbon {
+  font: bold 13px;
+  color: #333;
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  position: relative;
+  padding: 7px 0;
+  top: 15px;
+  left: -30px;
+  width: 120px;
+  color: #fff;
+}
+
+/* line 198, /Users/nmereus/repo/fleetguard-ryder/sass/global/_product.scss */
+.ribbon-wrapper .red {
+  background-color: #dc2028;
+}
+
+/* line 199, /Users/nmereus/repo/fleetguard-ryder/sass/global/_product.scss */
+.ribbon-wrapper .green {
+  background-color: green;
+}
+
 /*------------------------------------------------------------------*/
 /* Categories Box */
 /*------------------------------------------------------------------*/
@@ -7582,44 +7721,6 @@ table.shop_attributes td:last-child {
 }
 
 /*------------------------------------------------------------------*/
-/* Instagram Blocks */
-/*------------------------------------------------------------------*/
-/* line 9, /Users/nmereus/repo/fleetguard-ryder/sass/global/_instagram.scss */
-.instagram h2,
-.instagram .page-title {
-  margin-bottom: 10px;
-}
-
-/* line 14, /Users/nmereus/repo/fleetguard-ryder/sass/global/_instagram.scss */
-.instagram p {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-/* line 19, /Users/nmereus/repo/fleetguard-ryder/sass/global/_instagram.scss */
-.instagram ul li {
-  margin-right: 1.5%;
-  width: 18.5%;
-}
-
-/* line 24, /Users/nmereus/repo/fleetguard-ryder/sass/global/_instagram.scss */
-.instagram ul li:last-child {
-  margin: 0;
-}
-
-/* line 28, /Users/nmereus/repo/fleetguard-ryder/sass/global/_instagram.scss */
-.instagram ul,
-.instagram ul li {
-  list-style: none;
-  text-align: center;
-}
-
-/* line 34, /Users/nmereus/repo/fleetguard-ryder/sass/global/_instagram.scss */
-.instagram ul li {
-  display: inline-block;
-}
-
-/*------------------------------------------------------------------*/
 /* Blog Page */
 /*------------------------------------------------------------------*/
 /* line 9, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_blog_page.scss */
@@ -7667,6 +7768,344 @@ table.shop_attributes td:last-child {
   border: 0 none;
   padding-left: 0;
   padding-right: 0;
+}
+
+/*------------------------------------------------------------------*/
+/* Cart Page */
+/*------------------------------------------------------------------*/
+/* line 9, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 table {
+  width: 100%;
+}
+
+/* line 13, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 table tr th {
+  border-bottom: 2px solid #eee;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 10px;
+  color: inherit;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* line 26, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 table tr th.product-remove {
+  width: 40px;
+}
+
+/* line 30, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 table tr th.product-thumbnail {
+  width: 10px;
+}
+
+/* line 34, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 table tr th.product-name {
+  text-align: left;
+}
+
+/* line 38, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 table tr th.product-quantity {
+  float: none;
+  display: table-cell;
+}
+
+/* line 43, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 table tr td {
+  border-bottom: 1px solid #eee;
+  padding: 15px 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 50, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 td.product-thumbnail img {
+  max-width: 80px;
+}
+
+/* line 54, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 table tr td.product-name {
+  text-align: left;
+}
+
+/* line 58, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 td.product-price {
+  color: inherit;
+  font-size: inherit;
+}
+
+/* line 63, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 td.product-quantity,
+.post-8 td .product-quantity {
+  margin: 0;
+  float: none;
+  display: table-cell;
+}
+
+/* line 70, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 td.product-quantity,
+.post-8 td.product-subtotal {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* line 76, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 .cart-product-table-wrap {
+  margin-bottom: 30px;
+}
+
+/* line 80, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 .cart-actions {
+  margin-bottom: 80px;
+  display: flexbox;
+  flex-direction: row;
+}
+
+/* line 86, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 .cart-collateral {
+  width: 100%;
+  clear: both;
+}
+
+/* line 91, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 .cart-collateral .cart_totals {
+  background: #f8f8f8;
+  width: 100%;
+  max-width: 480px;
+  min-width: 320px;
+  float: right;
+  padding: 25px 15px 15px 15px;
+}
+
+/* line 100, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 .cart-collateral .cart_totals h3 {
+  text-align: center;
+}
+
+/* line 104, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 .cart-collateral .cart_totals div.responsive-table {
+  background: #fff;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+
+/* line 110, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 .cart-collateral .cart_totals table tr td {
+  text-align: right;
+}
+
+/* line 114, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 .cart-collateral .cart_totals table tr th {
+  text-align: left;
+  text-transform: none;
+  border-width: 1px;
+}
+
+/* line 120, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 .cart-collateral .cart_totals table tr td ul {
+  list-style: none;
+}
+
+/* line 124, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 .cart-collateral .cart_totals table tr.order-total {
+  text-align: left;
+  border-width: 1px;
+}
+
+/* line 129, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.post-8 .cart-collateral .cart_totals table tr.order-total th,
+.post-8 .cart-collateral .cart_totals table tr.order-total td {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 0px none;
+}
+
+/* line 137, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+ul#shipping_method {
+  list-style: none;
+}
+
+/* line 141, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+#shipping_method label {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/* line 146, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.cart-collateral .cart_totals table .shipping a {
+  border-bottom: 1px solid;
+}
+
+/* line 150, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.responsive-table {
+  overflow-x: auto;
+}
+
+/*------------------------------------------------------------------*/
+/* Checkout Page */
+/*------------------------------------------------------------------*/
+/* line 9, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout .checkout-order-review {
+  background-color: #f8f8f8;
+  margin-top: 8px;
+  padding: 40px 30px;
+}
+
+/* line 15, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout .checkout-order-review h3 {
+  text-align: center;
+}
+
+/* line 19, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout .checkout-order-review .product-checkout-review-order {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 24, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-review-order .responsive-table {
+  background-color: #fff;
+  padding: 20px 25px 0;
+  margin-bottom: 30px;
+}
+
+/* line 30, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-review-order table tr th,
+.product-checkout-review-order table tr td {
+  border: medium none;
+  max-width: 50%;
+  width: 50%;
+}
+
+/* line 37, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-review-order .product-total,
+.product-checkout-review-order .cart-subtotal td,
+.product-checkout-review-order .shipping td,
+.product-checkout-review-order .order-total td,
+.product-checkout-review-order .taxes td,
+.product-checkout-review-order .promotion td {
+  text-align: right;
+}
+
+/* line 46, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-review-order .cart-subtotal th,
+.product-checkout-review-order .shipping th,
+.product-checkout-review-order .taxes th,
+.product-checkout-review-order .promotion th {
+  text-align: left;
+  text-transform: none;
+}
+
+/* line 56, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-review-order .order-total th {
+  text-align: left;
+}
+
+/* line 60, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-review-order .order-total th,
+.product-checkout-review-order .order-total td {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* line 66, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-review-order .order-total td {
+  color: #dc2028;
+}
+
+/* line 72, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-payment ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 78, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-payment ul li {
+  margin-bottom: 20px;
+}
+
+/* line 82, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-payment ul li input[type="radio"],
+.product-checkout-payment ul li label {
+  display: inline-block;
+  margin: 0;
+}
+
+/* line 88, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-payment ul li img.paypal-img {
+  width: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 94, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-review-order .shipping_info {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 97, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-review-order .shipping_info td {
+  width: 100% !important;
+  padding: 0 !important;
+  text-align: right;
+}
+
+/* line 101, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-review-order .shipping_info td p {
+  font-size: 11px;
+  line-height: 12px;
+}
+
+/* line 105, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-checkout-review-order .shipping_info td p span {
+  color: #dc2028;
+}
+
+/* line 114, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.product-pomotion-amount {
+  color: #dc2028;
+}
+
+/* line 118, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.top-callout {
+  padding: 10px;
+  border: 10px solid #f8f8f8;
+  background-color: #000;
+  background-image: url(../img/bg/bg_10.jpg);
+  background-blend-mode: screen, difference, darken;
+}
+
+/* line 124, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.top-callout p {
+  color: #fff;
+  text-align: center;
+}
+
+/* line 127, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.top-callout p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* line 131, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.top-callout p a:hover {
+  color: #dc2028;
+}
+
+/* line 137, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.left-one {
+  background-position: top;
+}
+
+/* line 141, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
+.right-one {
+  background-position: bottom right;
 }
 
 /*# sourceMappingURL=../css/cummings-style.map */

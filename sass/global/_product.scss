@@ -170,3 +170,33 @@
     background: #f55151;
     color: #fff;
 }
+
+.ribbon-wrapper {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    z-index: 999;
+    .ribbon {
+      font: bold 13px;
+      color: #333;
+      text-align: center;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform:    rotate(-45deg);
+      -ms-transform:     rotate(-45deg);
+      -o-transform:      rotate(-45deg);
+      position: relative;
+      padding: 7px 0;
+      top: 15px;
+      left: -30px;
+      width: 120px;
+     
+      color: #fff;
+    }
+    .red{ background-color: $color-1;}
+    .green{ background-color: green};
+
+  }
+  

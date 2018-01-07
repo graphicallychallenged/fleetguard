@@ -297,3 +297,14 @@ ul.list-none-ib li,
 .text-center {
     text-align: center !important;
 }
+
+.lines{ 
+    width:100%; 
+    text-align:center;
+     border-bottom: 1px solid #ccc; 
+     line-height:0.1em; 
+     margin:40px 0 50px; 
+ span {
+      background:#fff; padding:0 10px; 
+}
+}
