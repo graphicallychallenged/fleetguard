@@ -3,9 +3,14 @@
 //**all main changes should be done in this file**
 @import 'variables';
 //Plugin Styles
+@import 'plugins/bootstrap';
+@import 'plugins/animate';
 @import 'plugins/owl.carousel';
 @import 'plugins/nice-select';
 @import 'plugins/magnific-popup';
+@import 'fonts/paymentfont';
+@import 'plugins/slider';
+@import 'plugins/font-awesome';
 
 //BASIC Styles
 @import 'basic/general_styles';

@@ -3,29 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Cart | Fleetguard Cummins | Your #1 Source for Lube Filtration, Air Filtration, and more! </title>
+    <title>Checkout | Fleetguard Cummins | Your #1 Source for Lube Filtration, Air Filtration, and more! </title>
     <meta name="description" content="Fleetguard Filtration | Your #1 Source for Lube Filtration, Air Filtration, and more!" />
     <meta name="keywords" content="Fleetguard Filtration | Your #1 Source for Lube Filtration, Air Filtration, and more!">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-
-    <!-- Favicone Icon -->
+    <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="icon" type="img/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
-
     <!-- CSS -->
-    <link href="css/plugins/bootstrap.css" rel="stylesheet" type="text/css" />
-    <!-- bootstrap css -->
-    <link href="css/plugins/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <!-- fontawesome css -->
-    <link href="css/plugins/animate.css" rel="stylesheet" type="text/css" />
-    <!-- animate css -->
     <link href="css/cummings-style.css" rel="stylesheet" type="text/css" />
-    <!-- template css -->
-    <link href="plugins/rev_slider/css/settings-ver.5.3.1.css" rel="stylesheet" type="text/css" />
-    <!-- Slider Revolution Css Setting -->
 
 </head>
 
@@ -399,7 +387,7 @@
                         <div class="col-12">
                             <nav class="breadcrumb-link">
                                 <a href="#">Home</a>
-                                <span>Checkout</span>
+                                <span>Payment Details</span>
                             </nav>
                         </div>
                     </div>
@@ -412,202 +400,231 @@
                 <div class="container mb-80">
                     <div class="row">
                         <div class="col-sm-12">
-                                <div class="row">
-                            <div class="col-sm-6 top-callout left-one"> <p class="checkout-info">
-                                    Returning customer? <strong><a href="login-register.html">Click here to login</a></strong>
-                                </p></div>
-                            <div class="col-sm-6 top-callout right-one"> <p class="checkout-info">
-                                    Have a coupon? <strong><a href="#">Click here to enter your code</a></strong>
-                                </p></div>
-                                </div>
-                            <article class="post-8">
+                                                 <article class="post-8">
                                
                                
-                                <form class="product-checkout mt-45 " data-parsley-validate>
+                                <form class="product-checkout mt-45 " data-parsley-validate  name="Paymentform" method="post" action="https://secure.bluepay.com/interfaces/bp10emu" onSubmit="return validateForm()">
+                                    <!-- BEGIN: Mandatory Hidden Form fields  DO NOT ERASE --> 
+                                    <input type="hidden" name="MERCHANT" value="100046169610">
+                                    <input type="hidden" name="TRANSACTION_TYPE" value="AUTH">
+                                    <INPUT type="hidden" name="TAMPER_PROOF_SEAL" value="${TAMPER_PROOF_SEAL}">
+                                    <input type="hidden" name="APPROVED_URL" value="${APPROVED_URL}">
+                                    <input type="hidden" name="DECLINED_URL" value="${DECLINED_URL}">
+                                    <input type="hidden" name="MISSING_URL" value="${DECLINED_URL}">
+                                    <input type="hidden" name="MODE" value="LIVE">
+                                    <input type="hidden" name="AMOUNT" value="${AMOUNT}">
+                                    <input type="hidden" name="RESPONSEVERSION" value="${RESPONSEVERSION}">
+                                    <input type="hidden" id="CC_EXPIRES" name="CC_EXPIRES" value="">
+                                    <input type="hidden" name="MERCHDATA_shpf-form-id" value="ryderform6"/>
+                                    <input type="hidden" name="LV3_ITEM1_PRODUCT_CODE" value="TP" />
+                                    <input type="hidden" name="LV3_ITEM1_UNIT_COST" value="${AMOUNT}" />
+                                    <input type="hidden" name="LV3_ITEM1_QUANTITY" value="1" />
+                                    <input type="hidden" name="LV3_ITEM1_ITEM_DESCRIPTOR" value="Parts" />
+                                    <input type="hidden" name="LV3_ITEM1_MEASURE_UNITS" value="EA" />
+                                    <input type="hidden" name="LV3_ITEM1_COMMODITY_CODE" value="25000000" />
+                                    <input type="hidden" name="LV3_ITEM1_TAX_AMOUNT" value="0" />
+                                    <input type="hidden" name="LV3_ITEM1_TAX_RATE" value="0" />
+                                    <input type="hidden" name="LV3_ITEM1_ITEM_DISCOUNT" value="0" />
+                                    <input type="hidden" name="LV3_ITEM1_LINE_ITEM_TOTAL" value="${AMOUNT}" />
+                                    <!-- END: Mandatory Hidden Form fields  DO NOT ERASE --> 
+                                   
                                     <div class="row">
+                                            <div class="col-md-6">
+                                                    <div class="checkout-order-review red">
+                                                        <h3>Credit Card Information</h3>
+                                                       
+                                                        <div class="product-checkout-review-order">
+                                                            <div class="responsive-table">
+                                                                    <div class="form-field-wrapper form-center">
+                                                                            <label for="billing_first_name" class="left">
+                                                                                Credit Card Number <i class="pf pf-american-express"></i> <i class="pf pf-visa"></i> <i class="pf pf-mastercard-alt"></i> <i class="pf pf-discover"></i>
+                                                                                <abbr class="form-required" title="required">*</abbr></label>
+                                                                            <input class="input-md form-full-width"  id="CC_NUM" name="CC_NUM" maxlength="16" size="18" value="" placeholder="No spaces or dashes" type="text" required="" aria-required="true" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="form-field-wrapper form-center col-sm-6">
+                                                                                <label for="billing_first_name" class="left">
+                                                                                    Expiration Date Month
+                                                                                    <abbr class="form-required" title="required">*</abbr></label>
+                                                                               
+                                                                                <select id="CC_MONTH" class="input-md form-full-width" name="CC_MONTH" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
+                                                                                        <option value="" >-- Please select --</option>
+                                                                                        <option value="01">01</option>
+                                                                                        <option value="02">02</option>
+                                                                                        <option value="03">03</option>
+                                                                                        <option value="04">04</option>
+                                                                                        <option value="05">05</option>
+                                                                                        <option value="06">06</option>
+                                                                                        <option value="07">07</option>
+                                                                                        <option value="08">08</option>
+                                                                                        <option value="09">09</option>
+                                                                                        <option value="10">10</option>
+                                                                                        <option value="11">11</option>
+                                                                                        <option value="12">12</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="form-field-wrapper form-center col-sm-6">
+                                                                                    <label for="billing_first_name" class="left">
+                                                                                        Year
+                                                                                        <abbr class="form-required" title="required">*</abbr></label>
+                                                                                        <select class="input-md form-full-width" id="CC_YEAR" name="CC_YEAR" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
+                                                                                                <option value="">-- Please select --</option>
+                                                                                               
+                                                                                               
+                                                                                                <option value="18">2018</option>
+                                                                                                <option value="19">2019</option>
+                                                                                                <option value="20">2020</option>
+                                                                                                <option value="21">2021</option>
+                                                                                                <option value="22">2022</option>
+                                                                                                <option value="23">2023</option>
+                                                                                                <option value="24">2024</option>
+                                                                                                <option value="25">2025</option>
+                                                                                                <option value="25">2026</option>
+                                                                                                <option value="25">2027</option>
+                                                                                                <option value="25">2028</option>
+                                                                    
+                                                                                        </select>
+                                                                             </div>
+                                                                             <div class="form-field-wrapper form-center col-sm-6">
+                                                                                    <label for="CVCCVV2" class="left">
+                                                                                        CCV
+                                                                                        <abbr class="form-required" title="required">*</abbr></label>
+
+                                                                                        <input class="input-md form-full-width" id="CVCCVV2" name="CVCCVV2" maxlength="4" size="4" value="" placeholder=" " type="text" required="" aria-required="true" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
+                                                                                       
+                                                                             </div>
+                                                                             <div class="form-field-wrapper form-center col-sm-12">
+                                                                                    <a href="https://www.bluepay.com/processing-services/solutions/payment-gateway" _fcksavedurl="https://www.bluepay.com/processing-services/solutions/payment-gateway" target="_blank">
+                                                                                        <img width="290" height="60" src="https://www.bluepay.com/sites/default/files/merchant_seal_03.gif" _fcksavedurl="https://www.bluepay.com/sites/default/files/merchant_seal_03.gif" alt="Online Payment Gateway" border="0" /></a>
+                                                                                    <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.bluepay.com/processing-services/solutions/payment-gateway" _fcksavedurl="https://www.bluepay.com/processing-services/solutions/payment-gateway" style="color:#0057A0;" target="_blank">Online Payment Gateway</a> 
+                                                                             </div>
+                                                                         </div>
+                                                            
+                                                            </div>
+                                                            <div class="form-field-wrapper form-center col-sm-12">
+                                                                <a href=#>Shipping Policy & Rates     </a> | <a href=#> Return Policy</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                         <div class="col-md-6">
-                                            <h3>Shipping Details</h3>
+                                            <br/><br/>
+                                            <h3>Billing Details</h3>
                                             <div class="row">
                                                 <div class="form-field-wrapper form-center col-sm-6">
                                                     <label for="billing_first_name" class="left">
-                                                        First Name
+                                                        First Name on Card  
                                                         <abbr class="form-required" title="required">*</abbr></label>
-                                                    <input class="input-md form-full-width" name="billing_first_name" title="First Name" value="" placeholder="First Name" type="text" required="" aria-required="true" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
+                                                    <input class="input-md form-full-width" id="NAME1" name="NAME1" title="First Name" value="" placeholder=" " type="text" required="" aria-required="true" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
                                                 </div>
                                                 <div class="form-field-wrapper form-center col-sm-6">
                                                     <label for="billing_last_name" class="left">
-                                                        Last Name
+                                                        Last Name on Card
                                                         <abbr class="form-required" title="required">*</abbr></label>
-                                                    <input class="input-md form-full-width" name="billing_last_name" title="Last Name" value="" placeholder="Last Name" type="text" required="" aria-required="true" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
+                                                    <input class="input-md form-full-width" id="NAME2" name="NAME2" title="Last Name" value="" placeholder=" " type="text" required="" aria-required="true" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
                                                 </div>
-                                                <div class="form-field-wrapper form-center col-sm-12">
-                                                    <label for="billing_company" class="left">Company Name</label>
-                                                    <input class="input-md form-full-width" name="billing_company" title="Company Name" value="" placeholder="Company Name" type="text" >
-                                                </div>
-                                               
+                                                                                             
                                                 <div class="form-field-wrapper form-center col-sm-12 street">
                                                     <label for="billing_address" class="left">
-                                                        Address
+                                                        Card Billing Street Address
                                                         <abbr class="form-required" title="required">*</abbr></label>
-                                                    <input class="input-md form-full-width mb-20" name="billing_address" title="Address" value="" placeholder="Street Address" type="text" required="" aria-required="true" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
-                                                    <input class="input-md form-full-width" name="address" title="Address" value="" placeholder="Apartment, suite, unit etc. (optional)" type="text" required="" aria-required="true">
+                                                    <input class="input-md form-full-width mb-20" id="ADDR1" name="ADDR1" title="Address" value="" placeholder=" " type="text" required="" aria-required="true" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
+                                                  
                                                 </div>
                                                 <div class="form-field-wrapper form-center col-sm-12 city">
                                                     <label for="billing_town_city" class="left">
-                                                        Town / City
+                                                        Card Billing City
                                                         <abbr class="form-required" title="required">*</abbr></label>
-                                                    <input class="input-md form-full-width"  title="Town / City" value=""   type="text" name="city" placeholder="City" size="15" aria-required="true"  data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
+                                                    <input class="input-md form-full-width"  title="Town / City" value=""   type="text" id="CITY" name="CITY" size="15" aria-required="true"  data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
                                                 </div>
                                              
-                                                <div class="form-field-wrapper form-center col-sm-12 state">
+                                                <div class="form-field-wrapper form-center col-sm-6 state">
                                                     <label for="billing_state" class="left">
-                                                        State / County
+                                                        Card Billing  State
                                                         <abbr class="form-required" title="required">*</abbr></label>
+                                            
+                                                        <select id="STATE" name="STATE" class="input-md form-full-width" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
 
-                                                        <input type="text" placeholder="State" class="input-md form-full-width" id="state" name="state" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
-                                                </div>
-                                                <div class="form-field-wrapper form-center col-sm-12 zipcode">
+                                                            <option value="">-- Please select --</option>
+                                                             <option value="AA">AA  </option>    
+                                                            <option value="AL">AL - Alabama</option>                                    
+                                                            <option value="AK">AK - Alaska</option> 
+                                                            <option value="AP">AP - Armed Forces Pacific</option>   
+                                                            <option value="AE">AE - Armed Forces Europe</option>  
+                                                            <option value="AA">AA - Armed Forces America</option>  
+                                                            <option value="AZ">AZ - Arizona</option> 
+                                                            <option value="AR">AR - Arkansas</option> 
+                                                            <option value="CA">CA - California</option>
+                                                            <option value="CO">CO - Colorado</option> 
+                                                            <option value="CT">CT - Connecticut</option>
+                                                            <option value="DC">DC - Washington D.C.</option>  
+                                                            <option value="DE">DE - Delaware</option> 
+                                                            <option value="FL">FL - Florida</option>
+                                                            <option value="GA">GA - Georgia</option> 
+                                                            <option value="GU">GU - Guam</option>
+                                                            <option value="HI">HI - Hawaii</option>
+                                                            <option value="ID">ID - Idaho</option>
+                                                            <option value="IL">IL - Illinois</option> 
+                                                            <option value="IN">IN - Indiana</option>
+                                                            <option value="IA">IA - Iowa</option> 
+                                                            <option value="KS">KS - Kansas</option>  
+                                                            <option value="KY">KY - Kentucky</option>  
+                                                            <option value="LA">LA - Louisiana</option> 
+                                                            <option value="ME">ME - Maine</option> 
+                                                            <option value="MD">MD - Maryland</option>
+                                                            <option value="MA">MA - Massachusetts</option> 
+                                                            <option value="MI">MI - Michigan</option>
+                                                            <option value="MN">MN - Minnesota</option>  
+                                                            <option value="MS">MS - Mississippi</option> 
+                                                            <option value="MO">MO - Missouri</option> 
+                                                            <option value="MT">MT - Montana</option> 
+                                                            <option value="NE">NE - Nebraska</option>
+                                                            <option value="NV">NV - Nevada</option>
+                                                            <option value="NH">NH - New Hampshire</option>
+                                                            <option value="NJ">NJ - New Jersey</option> 
+                                                            <option value="NM">NM - New Mexico</option>
+                                                            <option value="NY">NY - New York</option>
+                                                            <option value="NC">NC - North Carolina</option> 
+                                                            <option value="ND">ND - North Dakota</option> 
+                                                            <option value="OH">OH - Ohio</option> 
+                                                            <option value="OK">OK - Oklahoma</option> 
+                                                            <option value="OR">OR - Oregon</option> 
+                                                            <option value="PA">PA - Pennsylvania</option> 
+                                                            <option value="RI">RI - Rhode Island</option> 
+                                                            <option value="SC">SC - South Carolina</option>
+                                                            <option value="SD">SD - South Dakota</option>
+                                                            <option value="TN">TN - Tennessee</option>
+                                                            <option value="TX">TX - Texas</option>
+                                                            <option value="UT">UT - Utah</option> 
+                                                            <option value="VT">VT - Vermont</option> 
+                                                            <option value="VA">VA - Virginia</option> 
+                                                            <option value="VI">VI - Virgin Islands</option> 
+                                                            <option value="WA">WA - Washington</option>
+                                                            <option value="WV">WV - West Virginia</option>
+                                                            <option value="WI">WI - Wisconsin</option>
+                                                            <option value="WY">WY - Wyoming</option>
+                                                            <option value="XX">XX - OTHER</option>
+                                                        </select>
+                                               
+                                                    </div>
+                                                <div class="form-field-wrapper form-center col-sm-6 zipcode">
                                                     <label for="billing_postcode" class="left">
                                                         Postcode / Zipcode
                                                         <abbr class="form-required" title="required">*</abbr></label>
-                                                    <input class="input-md form-full-width"  title="Zipcode" value="" placeholder="ex: 555555" type="text" required="" id="zipcode" name="zipcode" data-parsley-required>
-                                                    <div class="zip-error"> </div>
+                                                    <input class="input-md form-full-width"  title="Zipcode" value="" id="ZIPCODE" name="ZIPCODE"  type="text" required=""  data-parsley-required>
+                                                    
                                                 </div>
-                                                <div class="form-field-wrapper form-center col-sm-6">
-                                                    <label for="billing_phone" class="left">
-                                                        Phone
-                                                        <abbr class="form-required" title="required">*</abbr></label>
-                                                    <input class="input-md form-full-width" name="billing_phone" title="phone" value="" placeholder="ex: 555 555 5555" type="tel" required="" aria-required="true" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
-                                                </div>
-                                                <div class="form-field-wrapper form-center col-sm-6">
-                                                    <label for="billing_email" class="left">
-                                                        Email
-                                                        <abbr class="form-required" title="required">*</abbr></label>
-                                                    <input class="input-md form-full-width" name="billing_email" title="Enter Email" value="" placeholder="Enter Email" type="email" required="" aria-required="true" data-parsley-type="email" type="email" data-parsley-required data-parsley-validation-threshold="6" data-parsley-trigger="focusout">
-                                                </div>
-                                                <div class="form-field-wrapper col-sm-6"><br/>
-                                                    <p> <strong>Shipping</strong></p>
-                                                    <ul id="shipping_method">
-                                                            <li>
-                                                                <input name="shipping_method[0]" data-index="0" id="shipping_method_0_legacy_flat_rate" value="legacy_flat_rate" class="shipping_method" checked="checked" type="radio">
-                                                                <label>Standard</label>
-                                                            </li>
-                                                            <li>
-                                                                <input name="shipping_method[0]" data-index="0" id="shipping_method_0_legacy_free_shipping" value="legacy_free_shipping" class="shipping_method" type="radio">
-                                                                <label for="shipping_method_0_legacy_free_shipping">Next Day Air</label>
-                                                                
-                                                            </li>
-                                                            
-                                                           
-                                                        </ul>
-                                                        <div class="shipping_info">
-                                                                <p><i>(Actual freight charges will apply for Next Day Air) 
-                                                                    For Next Day Air delivery before 3:00 PM or for Saturday delivery, please specify in the instructions below.
-                                                                   <span> NOTE: We cannot accept PayPal for Next Day Air orders.</span></i></p></div>
-                                                 </div>
-                                                <div class="form-field-wrapper col-sm-6"><br/>
-                                                   <p> <strong>You are not logged in. Would you like to...</strong></p>
-                                                    <label>
-                                                        <input type="radio" class="" id="createaccount"  value="0"  name="checkouttype"  checked/>
-                                                        <span>Create an account?</span> </label>
-                                                         
-                                                       
-                                                        <label>
-                                                                <input type="radio" class="" id="guestcheckout" value="1"  name="checkouttype"/>
-                                                                <span>Checkout as guest</span></label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="checkout-order-review">
-                                                <h3>Your order</h3>
-                                                <div class="product-checkout-review-order">
-                                                    <div class="responsive-table">
-                                                        <table class="">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th class="product-name">Product</th>
-                                                                    <th class="product-total">Total</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="cart_item">
-                                                                    <td class="product-name">NanoForce® Air Filters<strong> x 1</strong></td>
-                                                                    <td class="product-total">
-                                                                        <span class="product-price-amount amount"><span class="currency-sign">$</span>399.00</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="cart_item">
-                                                                    <td class="product-name">Conventional (Fleetcool™)<strong> x 2</strong></td>
-                                                                    <td class="product-total">
-                                                                        <span class="product-price-amount amount"><span class="currency-sign">$</span>598.00</span>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                            <tfoot>
-                                                                <tr class="cart-subtotal">
-                                                                    <th>Subtotal</th>
-                                                                    <td>
-                                                                        <strong><span class="product-price-amount amount"><span class="currency-sign">$</span>997.00</span></strong>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="promotion">
-                                                                    <th>Discounts</th>
-                                                                    <td>
-                                                                        <strong><span class="product-pomotion-amount amount"><span class="currency-sign">$</span>0.00</span></strong>
-                                                                    </td>
-                                                                </tr>
-                                                                
-                                                                
-                                                                <tr class="shipping">
-                                                                    <th>Shipping</th>
-                                                                    <td>
-                                                                            <strong><span class="shipping amount"><span class="currency-sign">$</span>8.99</span></strong>
-                                                                    </td>
-                                                                </tr>
+                                                <div class="product-checkout-payment">
                                                                
-
-                                                                <tr class="taxes">
-                                                                    <th>Taxes</th>
-                                                                    <td>
-                                                                        <strong><span class="product-price-amount amount"><span class="currency-sign">$</span>9.75</span></strong>
-                                                                    </td>
-                                                                </tr>
-                                                                
-                                                                <tr class="order-total">
-                                                                    <th>Total</th>
-                                                                    <td>
-                                                                        <span class="product-price-amount amount"><span class="currency-sign">$</span>1019.75</span>
-                                                                    </td>
-                                                                </tr>
-                                                            </tfoot>
-                                                        </table>
-                                                    </div>
-
-                                                    <div class="product-checkout-payment">
-                                                        <ul>
-                                                            
-                                                            <li>
-                                                                <input id="payment_method_cod" name="payment_method" value="cod" type="radio" />
-                                                                <label for="payment_method_cod">Credit Card  <i class="pf pf-american-express"></i> <i class="pf pf-visa"></i> <i class="pf pf-mastercard-alt"></i> <i class="pf pf-discover"></i></label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="payment_method_paypal" name="payment_method" value="paypal" type="radio" />
-                                                                <label for="payment_method_paypal">
-                                                                    PayPal &nbsp;&nbsp; <i class="pf pf-paypal"></i> &nbsp;&nbsp;&nbsp;
-                                                                    <a class="small" href="https://www.paypal.com/gb/webapps/mpp/paypal-popup" onclick="javascript:window.open('https://www.paypal.com/gb/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;">What is PayPal?</a>
-                                                                </label>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="place-order">
+                                                        <div class="place-order form-right">
                                                             <a class="btn btn-lg btn-color form-full-width" href="#">Place Order</a>
                                                         </div>
                                                     </div>
-
-                                                </div>
+                                            
                                             </div>
+
                                         </div>
+                                       
                                     </div>
                                 </form>
                             </article>
@@ -757,82 +774,70 @@
     <script type="text/javascript" src="js/custom.js"></script>
     <!-- custom js -->
     <!-- end jquery -->
+  
+
     <script>
-            //for the zipcode, hide all the address fields 
-            $(".state, .city, .zip-error").hide();
-
-        	$(function() {
-                // IMPORTANT: Fill in your client key
-                var clientKey = "js-XsVw2lWd6nTU4JzklvrnhH6kKaO6zsOrQVUxVXT0mP7VrSkWqpASYZZqhFOIn7Mb";
+        function validateForm()
+        {
+        
+        var msg = "";
+        
+        if ( document.Paymentform.CC_NUM.value == "") 
+            msg +='Credit Card Number is required.\n';
+            
+         if ( document.Paymentform.CC_MONTH.value == "") 
+            msg +='Expiration Month is required.\n';
                 
-                var cache = {};
-                var container = $(".post-8");
-                var errorDiv = container.find("div.zip-error");
-                
-                /** Handle successful response */
-                function handleResp(data)
-                {
-                    // Check for error
-                    if (data.error_msg)
-                        errorDiv.text(data.error_msg);
-                    else if ("city" in data)
-                    {
-                        $(".street, .state, .city").slideDown(); /* Show the fields */
-                        // Set city and state
-                        container.find("input[name='city']").val(data.city);
-                        container.find("input[name='state']").val(data.state);
-                    }
-                }
-                
-                // Set up event handlers
-                container.find("input[name='zipcode']").on("keyup change", function() {
-                    // Get zip code
-                    var zipcode = $(this).val().substring(0, 5);
-                    if (zipcode.length == 5 && /^[0-9]+$/.test(zipcode))
-                    {
-                        // Clear error
-                        errorDiv.empty();
-                        
-                        // Check cache
-                        if (zipcode in cache)
-                        {
-                            handleResp(cache[zipcode]);
-                        }
-                        else
-                        {
-                            // Build url
-                            var url = "https://www.zipcodeapi.com/rest/"+clientKey+"/info.json/" + zipcode + "/radians";
-                            
-                            // Make AJAX request
-                            $.ajax({
-                                "url": url,
-                                "dataType": "json"
-                            }).done(function(data) {
-                                handleResp(data);
-                                
-                                // Store in cache
-                                cache[zipcode] = data;
-                            }).fail(function(data) {
-                                if (data.responseText && (json = $.parseJSON(data.responseText)))
-                                {
-                                    // Store in cache
-                                    cache[zipcode] = json;
-                                    
-                                    // Check for error
-                                    if (json.error_msg)
-                                     $(".zip-error").show(); /* Ruh row */
-                                        errorDiv.text(json.error_msg);
-                                }
-                                else
-                                    errorDiv.text('Request failed.');
-                            });
-                        }
-                    }
-                }).trigger("change");
-            });
-    </script>
-
-      
+         if ( document.Paymentform.CC_YEAR.value == "") 
+            msg +='Expiration Year is required.\n';	
+        
+          if ( document.Paymentform.CVCCVV2.value == "") 
+            msg +='CVV Code is required\n';
+            
+          if ( document.Paymentform.NAME1.value == "") 
+            msg +='First Name is required.\n';
+        
+          if ( document.Paymentform.NAME2.value == "") 
+            msg +='Last Name is required.\n';
+            
+          if ( document.Paymentform.ADDR1.value == "")
+            msg += 'Address is required\n';
+            
+          if ( document.Paymentform.ZIPCODE.value == "")
+            msg += 'Zip Code is required\n';
+            
+            if (msg != "") {
+            intro = 'Your credit card could not be processed because of the following error(s):\n';
+            intro += 'Please correct these errors(s) and Click on Submit\n';
+            intro	+= '--------------------------------------------------------------------------\n';
+            msg = intro + msg;
+            alert(msg);
+                return false;
+           }
+           else {
+               document.Paymentform.CC_EXPIRES.value = document.Paymentform.CC_MONTH.value + '' + document.Paymentform.CC_YEAR.value;
+               return true;
+           }
+           
+        }
+        
+        
+        function PopupLink(poplink) {
+            if (null != poplink) {
+              window.open(poplink.href, null, 'height=520, width=460, scrollbars=1, resizable=1');
+              return false;
+            }
+            return true;
+          }
+          
+          function reset_onClick() {
+            var payForm = document.getElementById('Paymentform');
+            payForm.reset();
+            paymentMethod_onClick();
+            return false;
+          }
+          
+          </script>
 
 </body>
 

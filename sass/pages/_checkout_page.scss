@@ -7,7 +7,7 @@
 /*------------------------------------------------------------------*/
 
 .product-checkout .checkout-order-review {
-    background-color: #f8f8f8;
+    background-color: #eee;
     margin-top: 8px;
     padding: 40px 30px;
 }
@@ -91,13 +91,8 @@
     margin-right: 10px;
 }
 
-.product-checkout-review-order  .shipping_info{
-    padding:0;
-    margin:0;
-    td{
-        width:100% !important;
-        padding:0 !important;
-        text-align: right;
+.shipping_info{
+  
         p{
             font-size:11px;
             line-height: 12px;
@@ -106,14 +101,13 @@
                 color: $color-1
             }
         }
-
-    }
-
+ 
 }
 
 .product-pomotion-amount{
     color: $color-1;
 }
+
 
 .top-callout{ 
     padding:10px;
@@ -143,3 +137,4 @@
     background-position: bottom right
 
 }
+
