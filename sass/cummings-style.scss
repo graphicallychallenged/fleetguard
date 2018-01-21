@@ -19,13 +19,16 @@
 @import 'basic/forms';
 @import 'basic/spacing';
 @import 'basic/page_styles';
+
 //HEADER Styles
 @import 'header/header';
 @import 'header/top_header';
 @import 'header/logo';
 @import 'header/navigation';
+
 //FOOTER Styles
 @import 'footer/footer';
+
 //ELEMENTS Styles
 @import 'elements/accordian';
 @import 'elements/breadcrumbs';
@@ -63,3 +66,4 @@
 @import 'pages/blog_post';
 @import 'pages/cart_page';
 @import 'pages/checkout_page';
+@import 'pages/my_account';

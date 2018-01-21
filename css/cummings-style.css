@@ -21991,6 +21991,11 @@ a.small {
   font-size: 11px;
 }
 
+/* line 316, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_general_styles.scss */
+.margin-top {
+  margin-top: 20px;
+}
+
 /*------------------------------------------------------------------*/
 /* Typography Style */
 /*------------------------------------------------------------------*/
@@ -28747,6 +28752,87 @@ ul#shipping_method {
 /* line 135, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_checkout_page.scss */
 .right-one {
   background-position: bottom right;
+}
+
+/* line 4, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
+.my-account-menu .widget.shadow {
+  background-color: #ffffff;
+  border: solid 1px #f3f3f3;
+}
+
+/* line 8, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
+.my-account-menu .widget.shadow .widget-title {
+  padding: 14px 20px;
+  margin: 0;
+  background-color: #f3f3f3;
+  color: #333333;
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #7f7f7f;
+  overflow: hidden;
+}
+
+/* line 24, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
+.my-account-menu .widget-content {
+  border-top: solid 1px rgba(25, 25, 25, 0.1);
+  padding: 10px 15px;
+}
+
+/* line 28, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
+.my-account-menu ul {
+  margin: -10px -15px -10px -15px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+/* line 34, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
+.my-account-menu ul li {
+  padding: 10px 15px;
+  overflow: hidden;
+}
+
+/* line 37, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
+.my-account-menu ul li a {
+  display: block;
+  margin-right: 20px;
+  color: #191919;
+}
+
+/* line 44, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
+.my-account-menu ul li.active {
+  background-color: #f3f3f3;
+  border-right: 10px solid #dc2028;
+}
+
+/* line 47, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
+.my-account-menu ul li.active a {
+  color: #dc2028;
+}
+
+/* line 52, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
+.my-account-menu ul li + li {
+  border-top: solid 1px rgba(25, 25, 25, 0.1);
+}
+
+/* line 56, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
+.my-account-menu .widget *:last-child {
+  margin-bottom: 0;
+}
+
+/* line 63, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
+.default-shipping {
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+
+/* line 68, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
+.address-instuctions {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=../css/cummings-style.map */
