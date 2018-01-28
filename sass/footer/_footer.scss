@@ -72,7 +72,11 @@
     width: auto;
     margin-right: 6px;
 }
-
+.footer-social-icon{
+    .fa{
+        margin-top:30%;
+    }
+}
 .footer-social-icon li a {
     background: rgba(255, 255, 255, 0.13) none repeat scroll 0 0;
     border-radius: 50px;
@@ -121,7 +125,7 @@
     margin-bottom: 15px;
 }
 
-.footer-block.contact-block li i {
+.footer-block.contact-block li span {
     position: absolute;
     left: 0;
     line-height: inherit;

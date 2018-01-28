@@ -25545,6 +25545,11 @@ input.invalid, input.parsley-error {
 }
 
 /* line 76, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
+.footer-social-icon .fa {
+  margin-top: 30%;
+}
+
+/* line 80, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
 .footer-social-icon li a {
   background: rgba(255, 255, 255, 0.13) none repeat scroll 0 0;
   border-radius: 50px;
@@ -25557,24 +25562,24 @@ input.invalid, input.parsley-error {
   text-align: center;
 }
 
-/* line 88, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
+/* line 92, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
 .footer-social-icon li a:hover {
   background: white none repeat scroll 0 0;
   color: #333 !important;
 }
 
-/* line 93, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
+/* line 97, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
 .footer-social-icon a:hover {
   color: #dc2028;
 }
 
-/* line 97, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
+/* line 101, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
 .footer-block h6 {
   color: #fff;
   margin-bottom: 30px;
 }
 
-/* line 102, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
+/* line 106, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
 .footer-block ul li {
   display: inline-block;
   width: 100%;
@@ -25583,25 +25588,25 @@ input.invalid, input.parsley-error {
   position: relative;
 }
 
-/* line 110, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
+/* line 114, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
 .footer-block ul li a {
   color: #acacac;
   margin: 0 auto;
 }
 
-/* line 115, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
+/* line 119, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
 .footer-block ul li a:hover {
   color: #dc2028;
 }
 
-/* line 119, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
+/* line 123, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
 .footer-block.contact-block li {
   padding-left: 20px;
   margin-bottom: 15px;
 }
 
-/* line 124, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
-.footer-block.contact-block li i {
+/* line 128, /Users/nmereus/repo/fleetguard-ryder/sass/footer/_footer.scss */
+.footer-block.contact-block li span {
   position: absolute;
   left: 0;
   line-height: inherit;
