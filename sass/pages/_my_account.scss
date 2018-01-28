@@ -41,6 +41,12 @@
             }
           
         }
+        li:hover{
+            background-color: $color-1;
+            a{
+                color:#fff
+            }
+        }
         li.active {
             background-color: #f3f3f3;
             border-right:10px solid $color-1;
@@ -67,4 +73,31 @@
 
 .address-instuctions{
     padding:10px
+}
+
+.order-filter{
+    padding:10px;
+    p{
+        color:#000;
+        font-size:11px;
+        text-align:center;
+        font-weight:600;
+    }
+}
+
+.side{
+    border-right: 1px solid #f3f3f3;
+}
+.card-header{
+    width:100%
+}
+.card, .accordion{
+    margin-bottom:20px;
+    width:100%
+}
+
+.default-shipping{
+   ol{
+       margin-left:20px;
+   }
 }

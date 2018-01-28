@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Cart | Fleetguard Cummins | Your #1 Source for Lube Filtration, Air Filtration, and more! </title>
+    <title>Order History | Fleetguard Cummins | Your #1 Source for Lube Filtration, Air Filtration, and more! </title>
     <meta name="description" content="Fleetguard Filtration | Your #1 Source for Lube Filtration, Air Filtration, and more!" />
     <meta name="keywords" content="Fleetguard Filtration | Your #1 Source for Lube Filtration, Air Filtration, and more!">
 
@@ -400,7 +400,8 @@
                         <div class="col-12">
                             <nav class="breadcrumb-link">
                                 <a href="#">Home</a>
-                                <span>Nyree's Fleetguard Account</span>
+                                <a href="#">Nyree's Fleetguard Account</a>
+                                <span>Order History</span>
                             </nav>
                         </div>
                     </div>
@@ -413,70 +414,153 @@
                 <div class="container mb-80">
                     <div class="row">
                         <div class="col-sm-12">
+                              
                                 <div class="row">
-                            <div class="col-sm-3"> 
-                                <div class="my-account-menu sidebar">
-                                        <div class="widget shadow">
-                                               
-                                                <div class="widget-content">
-                                                    <ul>
-                                                        <li class="active"><a href="#"> Account Information </a></li>
-                                                        <li><a href="#">Address Books</a></li>
-                                                        <li><a href="#">Change Password</a></li>
-                                                        
-                                                        <li><a href="#">Order History</a></li>
-                                                        <li><a href="#">Reviews and Ratings</a></li>
-                                                        <li><a href="#">Returns Requests</a></li>
-                                                        <li><a href="#">Newsletter</a></li>
-                                                        
-                                                    </ul>
+                                        <div class="col-sm-3"> 
+                                                <div class="my-account-menu sidebar">
+                                                        <div class="widget shadow">
+                                                                
+                                                                <div class="widget-content">
+                                                                    <ul>
+                                                                        <li><a href="#"> Account Information </a></li>
+                                                                        <li><a href="#">Address Book</a></li>
+                                                                        <li ><a href="#">Change Password</a></li>
+                                                                        
+                                                                        <li class="active"><a href="#">Order History</a></li>
+                                                                        <li><a href="#">Reviews and Ratings</a></li>
+                                                                        <li><a href="#">Returns Requests</a></li>
+                                                                        <li><a href="#">Newsletter</a></li>
+                                                                        
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
                                                 </div>
                                             </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-9 profile-content"> 
-                                    <form class="product-checkout mt-45 " data-parsley-validate>
-                                    <h3>Basic Account Information</h3> 
+                            <div class="col-sm-9"> 
+                                    <h3>Order History </h3> 
                                     <div class="row">
-                                    
-                                    <div class="form-field-wrapper form-center col-sm-6">
-                                           
-                                        <label for="billing_first_name" class="left">
-                                            First Name
-                                            <abbr class="form-required" title="required">*</abbr></label>
-                                        <input class="input-md form-full-width" name="billing_first_name" title="First Name" value="" placeholder="Nyree" type="text" required="" aria-required="true" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
-                                    </div>
-                                    <div class="form-field-wrapper form-center col-sm-6">
-                                        <label for="billing_last_name" class="left">
-                                            Last Name
-                                            <abbr class="form-required" title="required">*</abbr></label>
-                                        <input class="input-md form-full-width" name="billing_last_name" title="Last Name" value="" placeholder="Mereus" type="text" required="" aria-required="true" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
-                                    </div>
-                                
-                                    <div class="form-field-wrapper form-center col-sm-6">
-                                        <label for="billing_phone" class="left">
-                                            Phone
-                                            <abbr class="form-required" title="required">*</abbr></label>
-                                        <input class="input-md form-full-width" name="billing_phone" title="phone" value="" placeholder="ex: 555 555 5555" type="tel" required="" aria-required="true" data-parsley-required data-parsley-validation-threshold="1" data-parsley-trigger="focusout">
-                                    </div>
-                                    <div class="form-field-wrapper form-center col-sm-6">
-                                        <label for="billing_email" class="left">
-                                            Email
-                                            <abbr class="form-required" title="required">*</abbr></label>
-                                        <input class="input-md form-full-width" name="billing_email" title="Enter Email" value="" placeholder="graphicallychallenged@gmail.com" type="email" required="" aria-required="true" data-parsley-type="email" type="email" data-parsley-required data-parsley-validation-threshold="6" data-parsley-trigger="focusout">
-                                    </div>
-                                  
-                                    <div class="place-order form-right col-sm-4">
-                                            <a class="btn btn-lg btn-color form-full-width" href="#">Update Information</a>
+                                        <div class="col-sm-12">
+                                            <p></p>
                                         </div>
-                                    </div> 
-                                    </form>                            
-                                </div> 
-                                </div>
-                           
+                                        <div id="accordion" class="accordion">
+                                                <div class="card m-b-0">
+                                                    <div class="card-header collapsed col-sm-12" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                        <a class="card-title">
+                                                                Choose one to filter or search by:
+                                                        </a>
+                                                    </div>
+                                                    <div id="collapseOne" class="card-block collapse col-sm-12">
+                                                        <div class="row"> 
+                                                            <div class="col-sm-4 order-filter side"> 
+                                              
+                                                                    <div class="row">
+                                                                      
+                                                        <div class="form-field-wrapper col-sm-12">
+                                                            <p> ORDER NUMBER</p>
+                                                        </div>
+                                                     
+                                                        <div class="form-field-wrapper col-sm-12">
+                                                           
+                                                            <input class="input-md form-full-width" name=" " title=" " value="" placeholder="Search By Web Order Number" type="text" >
+                                                        </div>
+                                                        <div class="place-order form-right col-sm-12">
+                                                                <a class="btn btn-lg btn-color form-full-width" href="#"> Search</a>
+                                                        </div>
+                                                     </div>
+                                                    </div>
+                                                     <div class="col-sm-4 side order-filter"> 
+                                                                  
+                                                            <div class="row">
+                                                        <div class="form-field-wrapper col-sm-12">
+                                                                <p> RECENT ORDER</p>
+                                                            </div>
+                    
+                                                        <div class="form-field-wrapper col-sm-12">
+                                                            <a class="btn btn-lg btn-color form-full-width" href="#"> Past 10 Orders</a>
+                                                        </div>
+                                                        <div class="form-field-wrapper col-sm-12">
+                                                            <a class="btn btn-lg btn-color form-full-width" href="#"> Past 20 Orders</a>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                        <div class="col-sm-4 order-filter"> 
+                                                                  
+                                                                <div class="row">
+                                                 
+                                                         
+                                                                       
+                                                                             <div class="col-sm-12 form-field-wrapper">
+                                                                                <p>DATE RANGE</p>
+                                                                            </div>
+                                                                            <div class="form-field-wrapper col-sm-12">
+                                                                                <input class="input-md form-full-width" id="date-range-orders" title="Order Range" value="" placeholder="Select dates" type="text" >
+                                                                            </div>
+                                                                            <div class="place-order form-right col-sm-12">
+                                                                                    <a class="btn btn-lg btn-color form-full-width" href="#"> View Orders</a>
+                                                                            </div>
+                                                                            </div>
+                                                         </div>
+                                                         </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                        
+
+                                                        <div class="col-sm-12"> 
+                                                                <table class="table striped table-bordered" id="orders" cellspacing="0" width="100%">
+                                                                <thead class="thead">
+                                                                        <tr>
+                                                                          <th>Item Number</th>
+                                                                          <th>Order Number</th>
+                                                                          <th>PO# / Credit Card Transaction ID</th>
+                                                                          <th>Total</th>
+                                                                          <th>Reorder</th>
+                                                                          <th>Track</th>
+                                                                        </tr>
+                                                                      </thead>
+                                                                      <tbody>
+                                                                        <tr>
+                                                                          <th scope="row">Dec 28 2015</th>
+                                                                          <td><a href="#">Q001818546732</a></td>
+                                                                          <td>Paypal: 4X247406HC861222T</td>
+                                                                          <td>$10.04</td>
+                                                                          <td><a href="#"><i class="fa fa-refresh" aria-hidden="true"></i> </a></td>
+                                                                          <td><a href="#"><i class="fa fa-truck" aria-hidden="true"></i></a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                                <th scope="row">Dec 28 2015</th>
+                                                                                <td><a href="#">200gjdfgnd2</a></td>
+                                                                                <td>Paypal: 4X247406HC861222T</td>
+                                                                                <td>$985.14</td>
+                                                                                <td><a href="#"><i class="fa fa-refresh" aria-hidden="true"></i></a></td>
+                                                                                <td><a href="#"><i class="fa fa-truck" aria-hidden="true"></i></a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                                <th scope="row">Dec 28 2015</th>
+                                                                                <td><a href="#">gjskrgbjsgbs</a></td>
+                                                                                <td>Paypal: 4X247406HC861222T</td>
+                                                                                <td>$110.04</td>
+                                                                                <td><a href="#"><i class="fa fa-refresh" aria-hidden="true"></i></a></td>
+                                                                                <td><a href="#"><i class="fa fa-truck" aria-hidden="true"></i></a></td>
+                                                                        </tr>
+                                                                      </tbody>
+                                                                    </table>
+                                    </div>
+                                                        </div>
+                                 </div>
+
+                                                        
+                            </div>
                         </div>
+                       </div>
                     </div>
+                    
                 </div>
+                                                     
+		      
+		                     
+                                                                      
+                               
 
             </section>
             <!-- End Page Content -->
@@ -616,83 +700,25 @@
     <script type="text/javascript" src="js/plugins/plugins-all.js"></script>
      <!-- Parsley Form validation js -->
      <script type="text/javascript" src="js/plugins/parsley.js"></script>
+        <!-- Date Range Picker js -->
+        <script type="text/javascript" src="js/plugins/moment.min.js"></script>
+        <script type="text/javascript" src="js/plugins/daterangepicker.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
+
        <!-- Plugins All js -->
     <script type="text/javascript" src="js/custom.js"></script>
     <!-- custom js -->
     <!-- end jquery -->
     <script>
-            //for the zipcode, hide all the address fields 
-            $(".state, .city, .zip-error").hide();
-
-        	$(function() {
-                // IMPORTANT: Fill in your client key
-                var clientKey = "js-XsVw2lWd6nTU4JzklvrnhH6kKaO6zsOrQVUxVXT0mP7VrSkWqpASYZZqhFOIn7Mb";
-                
-                var cache = {};
-                var container = $(".post-8");
-                var errorDiv = container.find("div.zip-error");
-                
-                /** Handle successful response */
-                function handleResp(data)
-                {
-                    // Check for error
-                    if (data.error_msg)
-                        errorDiv.text(data.error_msg);
-                    else if ("city" in data)
-                    {
-                        $(".street, .state, .city").slideDown(); /* Show the fields */
-                        // Set city and state
-                        container.find("input[name='city']").val(data.city);
-                        container.find("input[name='state']").val(data.state);
-                    }
-                }
-                
-                // Set up event handlers
-                container.find("input[name='zipcode']").on("keyup change", function() {
-                    // Get zip code
-                    var zipcode = $(this).val().substring(0, 5);
-                    if (zipcode.length == 5 && /^[0-9]+$/.test(zipcode))
-                    {
-                        // Clear error
-                        errorDiv.empty();
-                        
-                        // Check cache
-                        if (zipcode in cache)
-                        {
-                            handleResp(cache[zipcode]);
-                        }
-                        else
-                        {
-                            // Build url
-                            var url = "https://www.zipcodeapi.com/rest/"+clientKey+"/info.json/" + zipcode + "/radians";
-                            
-                            // Make AJAX request
-                            $.ajax({
-                                "url": url,
-                                "dataType": "json"
-                            }).done(function(data) {
-                                handleResp(data);
-                                
-                                // Store in cache
-                                cache[zipcode] = data;
-                            }).fail(function(data) {
-                                if (data.responseText && (json = $.parseJSON(data.responseText)))
-                                {
-                                    // Store in cache
-                                    cache[zipcode] = json;
-                                    
-                                    // Check for error
-                                    if (json.error_msg)
-                                     $(".zip-error").show(); /* Ruh row */
-                                        errorDiv.text(json.error_msg);
-                                }
-                                else
-                                    errorDiv.text('Request failed.');
-                            });
-                        }
-                    }
-                }).trigger("change");
+            $('#date-range-orders').daterangepicker({
+                "startDate": "01/15/2018",
+                "endDate": "01/21/2018"
+            }, function(start, end, label) {
+              console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
             });
+
+            $('#orders').DataTable();
     </script>
 
       
