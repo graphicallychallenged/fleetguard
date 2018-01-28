@@ -6,7 +6,9 @@
 
 /*------------------------------------------------------------------*/
 
-
+body{
+    font-family: $main-font;
+}
 /* Hedding ------------------ */
 
 h1,
@@ -152,7 +154,7 @@ dark-bg .white {
 p {
     font-weight: 400;
     font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $main-font;
     color: #777;
 }
 
