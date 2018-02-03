@@ -1,12 +1,12 @@
 /*------------------------------------------------------------------*/
 
 
-/* Newsletter Popup */
+/* Added to Cart */
 
 
 /*------------------------------------------------------------------*/
 
-#nlpopup_overlay {
+#atcpopup_overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -18,8 +18,8 @@
     z-index: 99999;
 }
 
-#nlpopup {
-    background-color: #f8f8f8;
+#atcpopup {
+    background-color: #ffffff;
     display: none;
     position: absolute;
     z-index: 999999;
@@ -41,12 +41,12 @@
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    background-image: url($newsletter-pop-bg);
+    background-image: url($addedtocart-pop-bg);
     background-position: top right;
     background-repeat: no-repeat;
 }
 
-.nlpopup_close_link {
+.atcpopup_close_link {
     font-size: 12px;
     font-family: $main-font;
     text-transform: uppercase;
@@ -54,7 +54,7 @@
     display: block;
 }
 
-.nlpopup_close_icon {
+.atcpopup_close_icon {
     position: absolute;
     top: -16px;
     right: -16px;
@@ -75,13 +75,13 @@
     -webkit-border-radius: 50%;
 }
 
-.nlpopup_close_icon img {
+.atcpopup_close_icon img {
     width: 100%;
     max-width: 100%;
     vertical-align: middle;
     display: block;
 }
 
-#nlpopup input[type="email"] {
+#atcpopup input[type="email"] {
     width: 225px;
 }

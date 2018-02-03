@@ -25801,7 +25801,7 @@ img.tp-caption {
   -o-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background-image: url("../img/newsletter_popup_bg.png");
+  background-image: url("../img/bg/newsletter_popup_bg.png");
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -25809,7 +25809,7 @@ img.tp-caption {
 /* line 49, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_newsletter_popup.scss */
 .nlpopup_close_link {
   font-size: 12px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   text-transform: uppercase;
   color: #777;
   display: block;
@@ -25847,6 +25847,184 @@ img.tp-caption {
 
 /* line 85, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_newsletter_popup.scss */
 #nlpopup input[type="email"] {
+  width: 225px;
+}
+
+/*------------------------------------------------------------------*/
+/* Added to Cart */
+/*------------------------------------------------------------------*/
+/* line 9, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_addedtocart_popup.scss */
+#atcpopup_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  z-index: 99999;
+}
+
+/* line 21, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_addedtocart_popup.scss */
+#atcpopup {
+  background-color: #ffffff;
+  display: none;
+  position: absolute;
+  z-index: 999999;
+  width: 100%;
+  max-width: 790px;
+  top: 100px;
+  left: 50%;
+  padding: 60px;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-image: url("../img/bg/addedtocart_popup_bg.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+/* line 49, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_addedtocart_popup.scss */
+.atcpopup_close_link {
+  font-size: 12px;
+  font-family: "Roboto Slab", sans-serif;
+  text-transform: uppercase;
+  color: #777;
+  display: block;
+}
+
+/* line 57, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_addedtocart_popup.scss */
+.atcpopup_close_icon {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  display: block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 30px;
+  background: #333;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+/* line 78, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_addedtocart_popup.scss */
+.atcpopup_close_icon img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  display: block;
+}
+
+/* line 85, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_addedtocart_popup.scss */
+#atcpopup input[type="email"] {
+  width: 225px;
+}
+
+/*------------------------------------------------------------------*/
+/* Sesssion Expiration Popup */
+/*------------------------------------------------------------------*/
+/* line 9, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_session_popup.scss */
+#session_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  z-index: 99999;
+}
+
+/* line 21, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_session_popup.scss */
+#session {
+  background-color: #ffffff;
+  display: none;
+  position: absolute;
+  z-index: 999999;
+  width: 100%;
+  max-width: 790px;
+  top: 100px;
+  left: 50%;
+  padding: 60px;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-image: url("../img/bg/addedtocart_popup_bg.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+/* line 49, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_session_popup.scss */
+.session_close_link {
+  font-size: 12px;
+  font-family: "Roboto Slab", sans-serif;
+  text-transform: uppercase;
+  color: #777;
+  display: block;
+}
+
+/* line 57, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_session_popup.scss */
+.session_close_icon {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  display: block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 30px;
+  background: #333;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+/* line 78, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_session_popup.scss */
+.session_close_icon img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  display: block;
+}
+
+/* line 85, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_session_popup.scss */
+#session input[type="email"] {
   width: 225px;
 }
 

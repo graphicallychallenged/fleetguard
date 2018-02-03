@@ -192,6 +192,85 @@
         };
 
 
+        // (6.1) Shop PopUp =====================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+        if ($window.width() > parseInt(winWidthSm)) {
+            var atcpopup_expires = $("atcpopup").data("expires");
+            var atcpopup_delay = $("atcpopup").data("delay") * 1500;
+
+            var open_atcpopup = function() {
+                var topoffset = $document.scrollTop(),
+                    viewportHeight = $window.height(),
+                    $popup = $('#atcpopup');
+                var calculatedOffset = (topoffset + (Math.round(viewportHeight / 2))) - (Math.round($popup.outerHeight() / 2));
+
+                if (calculatedOffset <= 40) {
+                    calculatedOffset = 40;
+                }
+
+                $popup.css('top', calculatedOffset);
+                $('#atcpopup, #atcpopup_overlay').fadeIn(500);
+            };
+
+            $('.atcpopup_close, #atcpopup_overlay').on('click', function(e) {
+                $.cookie('atcpopup', 'closed', { expires: nlpopup_expires, path: '/' });
+                $('#atcpopup, #atcpopup_overlay').fadeOut(200);
+                e.preventDefault();
+            });
+
+            if ($.cookie('atcpopup') != 'closed') {
+                setTimeout(open_atcpopup, atcpopup_delay);
+            }
+        };
+
+        // (6.2) Session Expiration PopUp =====================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+            var lefttime = 60;
+            var interval = setInterval('change()',60000);
+            var almostdoneTitle = 'Your Session Is About To Close!'
+            var almostdone = 'Logout will occur in less than ' + lefttime + ' minutes.';
+            var doneTitle = 'Welcome Back!'
+            var done = 'Your session has timed-out but you can easily log back in again.';
+            var continue1 = "#continue_buttons";
+            var continue2 = "#continue_buttons2";         
+            function change()
+            {
+               lefttime--;
+               if(lefttime<=3 && lefttime>0){                    
+                var open_session = function() {
+                    $( ".session-title" ).text(almostdoneTitle); 
+                    $( ".session-message" ).text(almostdone); 
+                    $(continue1).show;
+                    $(continue2).hide;
+                    modalWorking('#session_timeout', '#session_overlay', '#session_close');
+                };           
+               }          
+               if(lefttime==0){
+                var open_session = function() {
+                    $( ".session-title" ).text(doneTitle);
+                    $( ".session-message" ).text(done); 
+                    $(continue2).show;
+                    $(continue1).hide;
+                    modalWorking('#session_timeout', '#session_overlay', '#session_close');
+                };           
+               }
+            }
+
+            // This is a function to control pop ups 
+            function modalWorking(modalID, overlayID, closeID) { 
+            var topoffset = $document.scrollTop(),
+                viewportHeight = $window.height(),
+                $popup = $(modalID);
+            var calculatedOffset = (topoffset + (Math.round(viewportHeight / 2))) - (Math.round($popup.outerHeight() / 2));
+            if (calculatedOffset <= 40) {
+                calculatedOffset = 40;
+            }
+            $popup.css('top', calculatedOffset);
+            $(modalID, overlayID).fadeIn(500);
+            $(closeID, overlayID).on('click', function(e) {
+                $(modalID, overlayID).fadeOut(200);
+                e.preventDefault();
+            });
+             }
+
         // (7) Accordian ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
         /* Accordian Arrow Added*/
