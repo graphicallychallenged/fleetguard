@@ -29801,4 +29801,11 @@ ul#shipping_method {
   margin-left: 20px;
 }
 
+@media all and (max-width: 980px) {
+  /* line 8, /Users/nmereus/repo/fleetguard-ryder/sass/global/_responsive.scss */
+  .product-img-wrap {
+    max-height: 450px;
+  }
+}
+
 /*# sourceMappingURL=../css/cummings-style.map */
