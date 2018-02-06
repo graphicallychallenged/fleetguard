@@ -2,11 +2,14 @@
     
 }
 @media all and (max-width: 1280px) { 
-    
+        product-img-wrap{  
+                max-height:284px;
+                max-width:284px;
+        }
 }
 @media all and (max-width: 980px) { 
     .product-img-wrap{  
-            max-height:350px;
+            max-height:184px;
             max-width:184px;
     }
  }
