@@ -29803,7 +29803,7 @@ ul#shipping_method {
 
 @media all and (max-width: 1280px) {
   /* line 6, /Users/nmereus/repo/fleetguard-ryder/sass/global/_responsive.scss */
-  .product-list-item product-img-wrap {
+  .product-list-item .product-img-wrap {
     max-width: 250px;
     height: 200px;
   }
