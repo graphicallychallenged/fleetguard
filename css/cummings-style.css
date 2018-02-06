@@ -29804,14 +29804,14 @@ ul#shipping_method {
 @media all and (max-width: 1280px) {
   /* line 6, /Users/nmereus/repo/fleetguard-ryder/sass/global/_responsive.scss */
   .product-img-wrap {
-    height: 200px;
+    height: 200px !important;
   }
 }
 
 @media all and (max-width: 980px) {
-  /* line 15, /Users/nmereus/repo/fleetguard-ryder/sass/global/_responsive.scss */
+  /* line 12, /Users/nmereus/repo/fleetguard-ryder/sass/global/_responsive.scss */
   .product-img-wrap {
-    height: 130px;
+    height: 130px !important;
   }
 }
 
