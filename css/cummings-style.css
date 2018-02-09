@@ -29033,9 +29033,10 @@ table.shop_attributes td:last-child {
   -moz-transition: all 350ms ease-out 0s;
   -o-transition: all 350ms ease-out 0s;
   -webkit-transition: all 350ms ease-out 0s;
+  width: 100px;
 }
 
-/* line 26, /Users/nmereus/repo/fleetguard-ryder/sass/global/_category_box.scss */
+/* line 27, /Users/nmereus/repo/fleetguard-ryder/sass/global/_category_box.scss */
 .categories-box:hover .categories-image-wrap img {
   transform: scale(1.03);
   -moz-transform: scale(1.03);
@@ -29044,7 +29045,7 @@ table.shop_attributes td:last-child {
   -webkit-transform: scale(1.03);
 }
 
-/* line 34, /Users/nmereus/repo/fleetguard-ryder/sass/global/_category_box.scss */
+/* line 35, /Users/nmereus/repo/fleetguard-ryder/sass/global/_category_box.scss */
 .categories-box .categories-content {
   width: 100%;
   position: relative;
@@ -29052,7 +29053,7 @@ table.shop_attributes td:last-child {
   margin-top: -18px;
 }
 
-/* line 41, /Users/nmereus/repo/fleetguard-ryder/sass/global/_category_box.scss */
+/* line 42, /Users/nmereus/repo/fleetguard-ryder/sass/global/_category_box.scss */
 .categories-box .categories-content .categories-caption {
   padding: 10px 30px;
   background: #fff;
@@ -29060,7 +29061,7 @@ table.shop_attributes td:last-child {
   display: inline-block;
 }
 
-/* line 48, /Users/nmereus/repo/fleetguard-ryder/sass/global/_category_box.scss */
+/* line 49, /Users/nmereus/repo/fleetguard-ryder/sass/global/_category_box.scss */
 .categories-box .categories-content .categories-caption h3,
 .categories-box .categories-content .categories-caption h4,
 .categories-box .categories-content .categories-caption h5,
@@ -29075,7 +29076,7 @@ table.shop_attributes td:last-child {
   -webkit-transition: all 350ms ease-out 0s;
 }
 
-/* line 62, /Users/nmereus/repo/fleetguard-ryder/sass/global/_category_box.scss */
+/* line 63, /Users/nmereus/repo/fleetguard-ryder/sass/global/_category_box.scss */
 .categories-box:hover .categories-content .categories-caption h3,
 .categories-box:hover .categories-content .categories-caption h4,
 .categories-box:hover .categories-content .categories-caption h5,
