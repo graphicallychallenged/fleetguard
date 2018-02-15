@@ -1,0 +1,147 @@
+
+/*****************************
+***** [3. Error-area css] ****
+******************************/
+.error-area {
+	min-height: 100%;
+	position: relative;
+    width: 100%;
+    color:#fff;
+}
+.error-area:after {
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	min-height: 100%;
+	content: '';
+	position: absolute;
+	top: 0;
+}
+ .error-area {
+	background: rgba(255, 255, 255, 0) url($four04image) no-repeat fixed center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.section-title { padding:120px 0; }
+.ibg-bg { position: absolute; }
+/************************************
+***** [3.1. Error-content css] ******
+*************************************/
+.error-content {
+	position: relative;
+	z-index: 99999;
+}
+.error-content h1 {
+	font-size: 90px;
+	letter-spacing: 3px;
+	font-weight: 700;
+	line-height: 110px;
+	text-transform: uppercase;
+	padding: 30px 25px;
+}
+.error-content h1 { color: #fff; }
+
+.four { background: $color-1; }
+.zero {
+	background: $color-1;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.error-content {
+    h2 {
+	color: #ffffff;
+	font-size: 48px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	line-height: 60px;
+    text-transform: uppercase;
+    
+    span { color: $color-1; }
+}
+p {
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: 500;
+	line-height: 28px;
+}
+a {
+    color: $color-1;
+}
+a.back-home {
+    font-size: 14px;
+    color: #FFFFFF;
+	background: $color-1;
+	border:1px solid $color-1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 15px 40px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 42px;
+    -webkit-transition: all 0.5s ease 0s;
+       -moz-transition: all 0.5s ease 0s;
+        -ms-transition: all 0.5s ease 0s;
+	     -o-transition: all 0.5s ease 0s;
+	        transition: all 0.5s ease 0s;   
+}
+a.back-home:hover {
+	background: #ffffff;
+	color: $color-1;
+    border: 1px solid #ffffff;
+}
+
+h1, a{
+    -webkit-animation: 5s ease 0s normal none infinite running bounce;
+    -moz-animation: 5s ease 0s normal none infinite running bounce;
+     -ms-animation: 5s ease 0s normal none infinite running bounce;
+      -o-animation: 5s ease 0s normal none infinite running bounce;
+         animation: 5s ease 0s normal none infinite running bounce;
+}
+a:hover {
+	-webkit-animation: none;
+	   -moz-animation: none;
+        -ms-animation: none;
+	     -o-animation: none;
+	        animation: none;
+}
+}
+
+/************************************
+***** [4. Responsive css] ***********
+*************************************/
+/*4. Mobile Layout: 320px. */
+@media only screen and ( max-width: 767px ) {
+
+.error-content h1 {
+	font-size: 45px;
+	line-height: 65px;
+}
+.error-content h2 {
+	font-size: 25px;
+	line-height: 45px;
+}
+.error-content p {
+	font-size: 14px;
+	line-height: 22px;
+}
+.error-content a.back-home { padding: 15px 35px; }
+}
+/*5. Wide Mobile Layout: 480px. */
+@media only screen and ( min-width: 480px ) and ( max-width: 767px ) {
+
+.error-content h1 {
+	font-size: 60px;
+	line-height: 80px;
+}
+.error-content h2 {
+	font-size: 35px;
+	line-height: 55px;
+}
+.error-content p {
+	font-size: 18px;
+	line-height: 25px;
+}
+.error-content a.back-home { padding: 15px 35px; }
+}

@@ -235,7 +235,7 @@ form .error, .parsley-error {
     color: #f00;
 }
 
-form label.error, .parsley-type, .parsley-required, .parsley-min, .parsley-length, .parsley-equalto {
+form label.error, .parsley-type, .parsley-required, .parsley-min, .parsley-length, .parsley-equalto, .parsley-custom-error-message{
     margin-bottom: 0px;
    // margin-top: 3px;
     color: #e1534f;

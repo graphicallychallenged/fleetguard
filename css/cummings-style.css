@@ -23276,7 +23276,7 @@ form .error, .parsley-error {
 }
 
 /* line 238, /Users/nmereus/repo/fleetguard-ryder/sass/basic/_forms.scss */
-form label.error, .parsley-type, .parsley-required, .parsley-min, .parsley-length, .parsley-equalto {
+form label.error, .parsley-type, .parsley-required, .parsley-min, .parsley-length, .parsley-equalto, .parsley-custom-error-message {
   margin-bottom: 0px;
   color: #e1534f;
   font-size: 10px;
@@ -29534,6 +29534,12 @@ ul#shipping_method {
   overflow-x: auto;
 }
 
+/* line 154, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_cart_page.scss */
+.availability {
+  font-size: .7em;
+  font-style: italic;
+}
+
 /*------------------------------------------------------------------*/
 /* Checkout Page */
 /*------------------------------------------------------------------*/
@@ -29807,6 +29813,203 @@ ul#shipping_method {
 /* line 100, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
 .default-shipping ol {
   margin-left: 20px;
+}
+
+/*****************************
+***** [3. Error-area css] ****
+******************************/
+/* line 5, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-area {
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+
+/* line 11, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-area:after {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+/* line 19, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-area {
+  background: rgba(255, 255, 255, 0) url("../img/bg/bg_404.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 27, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.section-title {
+  padding: 120px 0;
+}
+
+/* line 28, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.ibg-bg {
+  position: absolute;
+}
+
+/************************************
+***** [3.1. Error-content css] ******
+*************************************/
+/* line 32, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-content {
+  position: relative;
+  z-index: 99999;
+}
+
+/* line 36, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-content h1 {
+  font-size: 90px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  line-height: 110px;
+  text-transform: uppercase;
+  padding: 30px 25px;
+}
+
+/* line 44, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-content h1 {
+  color: #fff;
+}
+
+/* line 46, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.four {
+  background: #dc2028;
+}
+
+/* line 47, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.zero {
+  background: #dc2028;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* line 53, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-content h2 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+/* line 61, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-content h2 span {
+  color: #dc2028;
+}
+
+/* line 63, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-content p {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+/* line 69, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-content a {
+  color: #dc2028;
+}
+
+/* line 72, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-content a.back-home {
+  font-size: 14px;
+  color: #FFFFFF;
+  background: #dc2028;
+  border: 1px solid #dc2028;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 15px 40px;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 42px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+/* line 89, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-content a.back-home:hover {
+  background: #ffffff;
+  color: #dc2028;
+  border: 1px solid #ffffff;
+}
+
+/* line 95, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-content h1, .error-content a {
+  -webkit-animation: 5s ease 0s normal none infinite running bounce;
+  -moz-animation: 5s ease 0s normal none infinite running bounce;
+  -ms-animation: 5s ease 0s normal none infinite running bounce;
+  -o-animation: 5s ease 0s normal none infinite running bounce;
+  animation: 5s ease 0s normal none infinite running bounce;
+}
+
+/* line 102, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+.error-content a:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+
+/************************************
+***** [4. Responsive css] ***********
+*************************************/
+/*4. Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+  /* line 117, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+  .error-content h1 {
+    font-size: 45px;
+    line-height: 65px;
+  }
+  /* line 121, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+  .error-content h2 {
+    font-size: 25px;
+    line-height: 45px;
+  }
+  /* line 125, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+  .error-content p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  /* line 129, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+  .error-content a.back-home {
+    padding: 15px 35px;
+  }
+}
+
+/*5. Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 134, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+  .error-content h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  /* line 138, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+  .error-content h2 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  /* line 142, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+  .error-content p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  /* line 146, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_404_page.scss */
+  .error-content a.back-home {
+    padding: 15px 35px;
+  }
 }
 
 @media all and (max-width: 1280px) {
