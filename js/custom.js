@@ -339,7 +339,7 @@
 
         // (9) Select Box ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
         $(function() {
-            $('.nice-select-box').niceSelect();
+            $('.nice-select-box', '.hawksortby').niceSelect();
         });
 
 

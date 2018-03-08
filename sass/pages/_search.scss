@@ -1,0 +1,39 @@
+// these are overwrites for Hawk Search
+
+.row, .field{
+    text-align: left !important;
+}
+
+.hawk-railNavHeading{
+    background: #000 !important;
+}
+.hawk-listingControls .hawk-mainControls{
+    background: #000 !important;
+}
+
+#hawkitemlist {
+    .product-img-wrap{
+        min-height: 180px;
+    }
+}
+
+#hawktoppager{
+
+    *:last-child{
+        margin-right:0;
+    }
+
+    display: inline-block;
+    width: 100%;
+
+    .hawk-listingControls{
+        display: inline-block;
+        width: 100%;
+        border: none; 
+        background: none;
+        
+
+    }
+
+
+}

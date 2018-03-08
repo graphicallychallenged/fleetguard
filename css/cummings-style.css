@@ -30012,6 +30012,45 @@ ul#shipping_method {
   }
 }
 
+/* line 3, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
+.row, .field {
+  text-align: left !important;
+}
+
+/* line 7, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
+.hawk-railNavHeading {
+  background: #000 !important;
+}
+
+/* line 10, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
+.hawk-listingControls .hawk-mainControls {
+  background: #000 !important;
+}
+
+/* line 15, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
+#hawkitemlist .product-img-wrap {
+  min-height: 180px;
+}
+
+/* line 20, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
+#hawktoppager {
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 22, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
+#hawktoppager *:last-child {
+  margin-right: 0;
+}
+
+/* line 29, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
+#hawktoppager .hawk-listingControls {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  background: none;
+}
+
 @media all and (max-width: 1280px) {
   /* line 6, /Users/nmereus/repo/fleetguard-ryder/sass/global/_responsive.scss */
   .product-img-wrap {
