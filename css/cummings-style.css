@@ -30021,12 +30021,12 @@ ul#shipping_method {
 
 /* line 7, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
 .hawk-railNavHeading {
-  background: #000 !important;
+  background: #dc2028 !important;
 }
 
 /* line 10, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
 .hawk-listingControls .hawk-mainControls {
-  background: #000 !important;
+  background: none;
 }
 
 /* line 15, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
@@ -30037,7 +30037,6 @@ ul#shipping_method {
 /* line 20, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
 #hawktoppager {
   display: inline-block;
-  width: 100%;
 }
 
 /* line 22, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */

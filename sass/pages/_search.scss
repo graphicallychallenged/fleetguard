@@ -5,10 +5,10 @@
 }
 
 .hawk-railNavHeading{
-    background: #000 !important;
+    background: $color-1 !important;
 }
 .hawk-listingControls .hawk-mainControls{
-    background: #000 !important;
+    background: none;
 }
 
 #hawkitemlist {
@@ -23,8 +23,8 @@
         margin-right:0;
     }
     display: inline-block;
-    width: 100%;
-    
+  
+
     .hawk-listingControls{
         display: inline-block;
         width: 100%;
