@@ -115,6 +115,7 @@
     display: block;
     margin-right: 20px;
     margin-bottom: 15px;
+    margin-left:30px;
 }
 
 .product-quantity .quantity,
@@ -169,7 +170,8 @@ product-quantity input[type="number"]::-webkit-inner-spin-button {
     display: block;
     text-align: center;
     line-height: 2.7;
-    font-size: 18px;
+    font-size: 15px;
+    font-weight:600;
 }
 
 .quantityPlus:before {

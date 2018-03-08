@@ -6,19 +6,29 @@
         .product-img-wrap{  
                 height:200px !important;
         }
-}
+        .product-item-inner {
+                max-height:200px;
+            }
+        }
 @media all and (max-width: 980px) { 
 
         .product-img-wrap{  
             height:130px !important;      
     }
- 
-
+    .product-item-inner {
+        max-height:130px;
+    }
 
  }
 @media all and (max-width: 736px) { 
+        .product-item-inner {
+                height:250px;
+            }
     
  }
 @media all and (max-width: 480px) { 
-    
+
+       .product-item-inner {
+                height:400px
+            }
  }

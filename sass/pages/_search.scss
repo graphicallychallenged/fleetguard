@@ -22,17 +22,18 @@
     *:last-child{
         margin-right:0;
     }
-
     display: inline-block;
     width: 100%;
-
+    
     .hawk-listingControls{
         display: inline-block;
         width: 100%;
         border: none; 
         background: none;
-        
-
+    }
+    h1{
+        font-size: 28px;
+        line-height: 1.3;
     }
 
 
