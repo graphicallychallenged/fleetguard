@@ -30037,7 +30037,7 @@ ul#shipping_method {
 /* line 20, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
 #hawktoppager {
   display: inline-block;
-  width: 75%;
+  width: 82%;
 }
 
 /* line 22, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
@@ -30105,6 +30105,17 @@ ul#shipping_method {
   float: left !important;
   width: auto;
   margin: 3px 20px 0px 20px !important;
+}
+
+/* line 80, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
+#hawktoppager .hawk-guidedNavWrapper .hawk-navGroup li a:hover {
+  color: #fff;
+  background: #dc2028;
+}
+
+/* line 88, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
+.product-view-icon-active .fa {
+  padding-top: 10px;
 }
 
 @media all and (max-width: 1280px) {
