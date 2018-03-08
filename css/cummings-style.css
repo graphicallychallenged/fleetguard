@@ -27402,7 +27402,7 @@ ul.product-filter {
 .product-filter-content > .product-filter-content-inner > form,
 .product-filter-content > .product-filter-content-inner > p,
 .product-filter-content > .product-filter-content-inner > div {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 /* line 62, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
@@ -30026,7 +30026,7 @@ ul#shipping_method {
 
 /* line 10, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
 .hawk-listingControls .hawk-mainControls {
-  background: none;
+  background: none !important;
 }
 
 /* line 15, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
@@ -30037,6 +30037,7 @@ ul#shipping_method {
 /* line 20, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
 #hawktoppager {
   display: inline-block;
+  width: 85%;
 }
 
 /* line 22, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
@@ -30044,7 +30045,7 @@ ul#shipping_method {
   margin-right: 0;
 }
 
-/* line 28, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
+/* line 29, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
 #hawktoppager .hawk-listingControls {
   display: inline-block;
   width: 100%;
@@ -30052,10 +30053,10 @@ ul#shipping_method {
   background: none;
 }
 
-/* line 34, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
+/* line 35, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_search.scss */
 #hawktoppager h1 {
-  font-size: 28px;
-  line-height: 1.3;
+  font-size: 28px !important;
+  line-height: 1.3 !important;
 }
 
 @media all and (max-width: 1280px) {
