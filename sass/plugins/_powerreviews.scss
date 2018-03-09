@@ -94,17 +94,23 @@
       text-align: right;
   }
 
-  .product-list-view .pr-snippet-read-write{
-     a.pr-snipet-link{
-         color:$color-1 !important;
-     }
-
-  }
-
-  .product-list-view .pr-snippet-write-first-review{
-      p {
-          font-size:10px !important;
-
-      }
+  
    
-}
+  .product-list-view .pr-snippet-read-write{
+    a.pr-snipet-link{
+        color:$color-1 !important;
+    }
+
+ }
+
+ .product-list-view .pr-snippet-write-first-review{
+     p {
+         font-size:10px !important;
+
+     }    
+    }
+
+    .pr-snippet-stars .pr-stars-small, .pr-modal-container .pr-stars {
+        background-image: url(../fleetguardcummins/img/stars_small.gif) !important;
+    }
+
