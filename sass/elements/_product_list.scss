@@ -166,11 +166,20 @@
 .product-list-view {
     .product-rating{
         margin-left:20px;
+     
     }
 }
 
+.product-list-item.product-list-view{
+    .product-rating{
+        margin-left:20px;
+        position: absolute;
+        bottom:20%;
+    }
+} 
+
 .product-number{
-    font-size:.7em
+    font-size:.7em;
 }
 .product-list-view .product-item-element {
     width: 100%;

@@ -95,5 +95,16 @@
   }
 
   .product-list-view .pr-snippet-read-write{
-      display:none;
+     a.pr-snipet-link{
+         color:$color-1 !important;
+     }
+
   }
+
+  .product-list-view .pr-snippet-write-first-review{
+      p {
+          font-size:10px !important;
+
+      }
+   
+}

@@ -24,8 +24,49 @@
     }
     display: inline-block;
   width:82%;
-  
 
+  .hawk-guidedNavWrapper .hawk-selectedNav {
+    background-color: #d5d6d6;
+    border-bottom: none !important;
+}
+.hawk-guidedNavWrapper .hawk-navGroup {
+    padding: 10px 0;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+
+
+.hawk-guidedNavWrapper .hawk-selectedGroup {
+    padding: 10px 0;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.hawk-guidedNavWrapper .hawk-selectedGroup ul {
+    max-height: none;
+    margin: 0;
+    overflow: visible;
+    background:none !important;
+    border:none !important;
+}
+
+.hawk-guidedNavWrapper .hawk-navGroup li {
+    position: relative;
+    margin-top: 10px;
+    float:left; 
+    margin-right:15px;
+    padding:2px 4px;
+}
+
+.hawk-guidedNavWrapper .hawk-selectedGroup ul a, .hawk-guidedNavWrapper .hawk-selectedGroup ul a:link, .hawk-guidedNavWrapper .hawk-selectedGroup ul a:visited {
+    font-size: .9em;
+    font-weight: 600;
+}
+.hawk-guidedNavWrapper .hawk-selectedGroup ul a:hover{
+    background-color:#000;
+    color:#fff;
+}
     .hawk-listingControls{
         display: inline-block;
         width: 100%;
