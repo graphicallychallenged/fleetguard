@@ -23,7 +23,7 @@
         margin-right:0;
     }
     display: inline-block;
-  width:82%;
+  width:100%;
 
   .hawk-guidedNavWrapper .hawk-selectedNav {
     background-color: #fff;
@@ -114,7 +114,6 @@
 }
 
 .hawk-listingControls .hawk-pagination {
-    float: left !important;;
     width: auto;
     margin: 3px 20px 0px 20px !important;;
 }
