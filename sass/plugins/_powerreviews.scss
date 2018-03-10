@@ -104,13 +104,16 @@
  }
 
  .product-list-view .pr-snippet-write-first-review{
-     p {
+  
          font-size:10px !important;
 
-     }    
+     
     }
 
     .pr-snippet-stars .pr-stars-small, .pr-modal-container .pr-stars {
-        background-image: url(../fleetguardcummins/img/stars_small.gif) !important;
+        background-image: url(../img/stars_small.gif) !important;
     }
 
+    .pr-snippet-read-write a.pr-snippet-link {
+        color: $color-1;
+    }
