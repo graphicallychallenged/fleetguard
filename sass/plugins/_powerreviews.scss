@@ -58,6 +58,9 @@
 .pr_snippet_product .pr-snippet-review-count {
     display: inline;
     clear: right;
+    color:#000; 
+    font-size:10px;
+    font-weight:bold;
     }
 
 .pr_snippet_product .pr-snippet-read-write {
@@ -111,9 +114,10 @@
     }
 
     .pr-snippet-stars .pr-stars-small, .pr-modal-container .pr-stars {
-        background-image: url(../img/stars_small.gif) !important;
+        background-image: url("../img/stars_small.png") !important;
     }
 
     .pr-snippet-read-write a.pr-snippet-link {
-        color: $color-1;
+        color: $color-1 !important;
+        font-weight: bold !important;
     }
