@@ -102,24 +102,24 @@
    }
 }
 
-.account-edit {
+#profileForm {
     &.is-readonly {
       .btn-save {
         display: none;
       }
-      input,textarea{
+      .input-md{
         &[disabled] {
           cursor: text;
           background-color: #fff;
-          border-color: transparent;
-          outline-color: transparent;
-          box-shadow: none;
+          border-color: transparent !important;
+          outline-color: transparent !important;
+          box-shadow: none !important;
         }
       }
     }
     &.is-editing { 
       .btn-edit{
-        display: none;
+        display: none !important;;
       }
     }
   }

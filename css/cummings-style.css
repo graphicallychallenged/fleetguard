@@ -29961,22 +29961,22 @@ ul#shipping_method {
 }
 
 /* line 107, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
-.account-edit.is-readonly .btn-save {
+#profileForm.is-readonly .btn-save {
   display: none;
 }
 
 /* line 111, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
-.account-edit.is-readonly input[disabled], .account-edit.is-readonly textarea[disabled] {
+#profileForm.is-readonly .input-md[disabled] {
   cursor: text;
   background-color: #fff;
-  border-color: transparent;
-  outline-color: transparent;
-  box-shadow: none;
+  border-color: transparent !important;
+  outline-color: transparent !important;
+  box-shadow: none !important;
 }
 
 /* line 121, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
-.account-edit.is-editing .btn-edit {
-  display: none;
+#profileForm.is-editing .btn-edit {
+  display: none !important;
 }
 
 /*****************************
