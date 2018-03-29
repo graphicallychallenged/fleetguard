@@ -27668,10 +27668,11 @@ ul.product-filter {
 
 /* line 177, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
 .product-number {
-  font-size: .7em;
+  font-size: .9em;
+  color: #000;
 }
 
-/* line 180, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
+/* line 181, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
 .product-list-view .product-item-element {
   width: 100%;
   max-width: 100%;
@@ -27681,7 +27682,7 @@ ul.product-filter {
   flex: 0 0 100%;
 }
 
-/* line 189, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
+/* line 190, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
 .product-list-view .product-item-element .product-item-inner {
   float: left;
   margin-bottom: 0;
@@ -27689,25 +27690,25 @@ ul.product-filter {
   height: 100% !important;
 }
 
-/* line 196, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
+/* line 197, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
 .product-list-view .product-item-element .product-detail {
   text-align: left;
   padding-left: 30px;
 }
 
 @media (max-width: 480px) {
-  /* line 202, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
+  /* line 203, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
   .col-xsm-12 {
     width: 100%;
   }
-  /* line 205, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
+  /* line 206, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
   .product-list-view .product-item-element .product-item-inner {
     float: none;
     margin-bottom: 15px;
     max-width: 100%;
     max-width: 100%;
   }
-  /* line 211, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
+  /* line 212, /Users/nmereus/repo/fleetguard-ryder/sass/elements/_product_list.scss */
   .product-list-view .product-item-element .product-detail {
     text-align: left;
     padding-left: 0px;
@@ -27834,7 +27835,7 @@ ul.product-filter {
 /* line 106, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .single-variation-wrap {
   border-top: 1px solid #eee;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-bottom: 25px;
 }
 
