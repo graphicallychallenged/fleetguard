@@ -103,7 +103,7 @@
 }
 
 #profileForm {
-    &.is-readonly {
+    .is-readonly {
       .btn-save {
         display: none;
       }
@@ -117,7 +117,7 @@
         }
       }
     }
-    &.is-editing { 
+    .is-editing { 
       .btn-edit{
         display: none !important;;
       }

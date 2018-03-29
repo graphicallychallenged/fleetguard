@@ -97,27 +97,28 @@
       text-align: right;
   }
 
-  
+  .pr-snippet-stars {
+      border:none !important;
+  }
    
-  .product-list-view .pr-snippet-read-write{
-    a.pr-snipet-link{
-        color:$color-1 !important;
-    }
-
- }
-
- .product-list-view .pr-snippet-write-first-review{
-  
-         font-size:10px !important;
-
-     
-    }
-
     .pr-snippet-stars .pr-stars-small, .pr-modal-container .pr-stars {
         background-image: url("../img/stars_small.png") !important;
     }
 
-    .pr-snippet-read-write a.pr-snippet-link {
+    .pr-snippet-read-write {
+        a.pr-snippet-link {
         color: $color-1 !important;
-        font-weight: bold !important;
+       // font-weight: bold !important;
+        }
+    }
+
+    .product-list-view{
+        .pr-snippet-wrapper{
+            border: none !important;
+        }
+        .pr-snippet-write-first-review{
+            p{
+                font-size:10px !important;
+            }                
+       }
     }

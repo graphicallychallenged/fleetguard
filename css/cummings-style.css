@@ -22450,25 +22450,29 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   text-align: right;
 }
 
-/* line 103, /Users/nmereus/repo/fleetguard-ryder/sass/plugins/_powerreviews.scss */
-.product-list-view .pr-snippet-read-write a.pr-snipet-link {
-  color: #dc2028 !important;
+/* line 100, /Users/nmereus/repo/fleetguard-ryder/sass/plugins/_powerreviews.scss */
+.pr-snippet-stars {
+  border: none !important;
 }
 
-/* line 109, /Users/nmereus/repo/fleetguard-ryder/sass/plugins/_powerreviews.scss */
-.product-list-view .pr-snippet-write-first-review {
-  font-size: 10px !important;
-}
-
-/* line 116, /Users/nmereus/repo/fleetguard-ryder/sass/plugins/_powerreviews.scss */
+/* line 104, /Users/nmereus/repo/fleetguard-ryder/sass/plugins/_powerreviews.scss */
 .pr-snippet-stars .pr-stars-small, .pr-modal-container .pr-stars {
   background-image: url("../img/stars_small.png") !important;
 }
 
-/* line 120, /Users/nmereus/repo/fleetguard-ryder/sass/plugins/_powerreviews.scss */
+/* line 109, /Users/nmereus/repo/fleetguard-ryder/sass/plugins/_powerreviews.scss */
 .pr-snippet-read-write a.pr-snippet-link {
   color: #dc2028 !important;
-  font-weight: bold !important;
+}
+
+/* line 116, /Users/nmereus/repo/fleetguard-ryder/sass/plugins/_powerreviews.scss */
+.product-list-view .pr-snippet-wrapper {
+  border: none !important;
+}
+
+/* line 120, /Users/nmereus/repo/fleetguard-ryder/sass/plugins/_powerreviews.scss */
+.product-list-view .pr-snippet-write-first-review p {
+  font-size: 10px !important;
 }
 
 /*------------------------------------------------------------------*/
@@ -27734,9 +27738,10 @@ ul.product-filter {
   font-weight: 400;
   margin-bottom: 5px;
   margin-top: 5px;
+  min-height: 45px;
 }
 
-/* line 18, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 19, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-price {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -27745,7 +27750,7 @@ ul.product-filter {
   font-weight: 600;
 }
 
-/* line 26, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 27, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-price del {
   color: #999;
   font-weight: 400;
@@ -27754,17 +27759,17 @@ ul.product-filter {
   font-style: italic;
 }
 
-/* line 34, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 35, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-description {
   margin-bottom: 30px;
 }
 
-/* line 38, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 39, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-filters form {
   margin-bottom: 30px;
 }
 
-/* line 44, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 45, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-filters .color-selector .entry {
   border-radius: 50%;
   -moz-border-radius: 50%;
@@ -27778,7 +27783,7 @@ ul.product-filter {
   cursor: pointer;
 }
 
-/* line 57, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 58, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-filters .color-selector .entry:before {
   border: 1px solid #fff;
   bottom: 2px;
@@ -27790,7 +27795,7 @@ ul.product-filter {
   top: 2px;
 }
 
-/* line 68, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 69, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-filters .color-selector .entry:after {
   border: 2px solid #333;
   opacity: 0;
@@ -27806,13 +27811,13 @@ ul.product-filter {
   -webkit-border-radius: 50%;
 }
 
-/* line 83, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 84, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-filters .color-selector .entry.active:after {
   border: 2px solid #333;
   opacity: 1;
 }
 
-/* line 88, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 89, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-filters .size-selector .entry {
   display: inline-block;
   position: relative;
@@ -27826,19 +27831,19 @@ ul.product-filter {
   cursor: pointer;
 }
 
-/* line 101, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 102, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-filters .size-selector .entry.active {
   border-color: #333;
 }
 
-/* line 105, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 106, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .single-variation-wrap {
   border-top: 1px solid #eee;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-/* line 111, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 112, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-quantity {
   position: relative;
   width: 120px;
@@ -27849,7 +27854,7 @@ ul.product-filter {
   margin-left: 30px;
 }
 
-/* line 121, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 122, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-quantity .quantity,
 .product-quantity .quantity:hover,
 .product-quantity .quantity:focus {
@@ -27864,7 +27869,7 @@ ul.product-filter {
   padding-right: 35px;
 }
 
-/* line 135, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 136, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-quantity input[type="number"]::-webkit-outer-spin-button,
 product-quantity input[type="number"]::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
@@ -27872,12 +27877,12 @@ product-quantity input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* line 142, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 143, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-quantity .quantity::-ms-expand {
   display: none;
 }
 
-/* line 146, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 147, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .quantityPlus,
 .quantityMinus {
   position: absolute;
@@ -27888,18 +27893,18 @@ product-quantity input[type="number"]::-webkit-inner-spin-button {
   top: 0;
 }
 
-/* line 156, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 157, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .quantityPlus {
   border-left: 1px solid #ddd;
 }
 
-/* line 160, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 161, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .quantityMinus {
   left: 0;
   border-right: 1px solid #ddd;
 }
 
-/* line 165, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 166, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .quantityPlus:before,
 .quantityMinus:before {
   height: 100%;
@@ -27912,17 +27917,17 @@ product-quantity input[type="number"]::-webkit-inner-spin-button {
   font-weight: 600;
 }
 
-/* line 177, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 178, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .quantityPlus:before {
   content: "+";
 }
 
-/* line 181, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 182, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .quantityMinus:before {
   content: "–";
 }
 
-/* line 187, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 188, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .single-add-to-wrap {
   position: relative;
   display: block;
@@ -27934,7 +27939,7 @@ product-quantity input[type="number"]::-webkit-inner-spin-button {
   margin-bottom: 25px;
 }
 
-/* line 198, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 199, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .single-add-to-wrap .single-add-to-wishlist,
 .single-add-to-wrap .single-add-to-compare {
   width: 49.5%;
@@ -27948,12 +27953,12 @@ product-quantity input[type="number"]::-webkit-inner-spin-button {
   padding-bottom: 5px;
 }
 
-/* line 211, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 212, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-meta {
   margin-bottom: 15px;
 }
 
-/* line 215, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 216, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-meta > span,
 .product-share > span {
   color: #333;
@@ -27962,7 +27967,7 @@ product-quantity input[type="number"]::-webkit-inner-spin-button {
   margin-bottom: 15px;
 }
 
-/* line 223, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 224, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-meta > span span,
 .product-share ul {
   color: #4e4e4e;
@@ -27971,29 +27976,29 @@ product-quantity input[type="number"]::-webkit-inner-spin-button {
   margin: 0 2px;
 }
 
-/* line 231, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 232, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-share {
   margin-bottom: 30px;
 }
 
-/* line 235, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 236, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-share ul li,
 .product-share > span {
   display: inline-block;
 }
 
-/* line 240, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 241, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-share ul li {
   margin: 0 5px;
 }
 
-/* line 244, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 245, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-share ul li a {
   display: block;
   color: #777;
 }
 
-/* line 249, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
+/* line 250, /Users/nmereus/repo/fleetguard-ryder/sass/product-detail/_product_content.scss */
 .product-share ul li a:hover {
   color: #dc2028;
 }
@@ -28862,9 +28867,10 @@ table.shop_attributes td:last-child {
 /* line 64, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
 .nf-carousel-theme1 .owl-next i {
   margin-left: 2px;
+  margin-top: 8px;
 }
 
-/* line 68, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
+/* line 69, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
 .product-item-4 .owl-prev,
 .product-item-4 .owl-next,
 .product-item-5 .owl-prev,
@@ -28873,7 +28879,7 @@ table.shop_attributes td:last-child {
 }
 
 /* Blog Carousel */
-/* line 78, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
+/* line 79, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
 .blog-carousel .owl-prev,
 .blog-carousel .owl-next {
   transform: translateY(-100%);
@@ -28884,7 +28890,7 @@ table.shop_attributes td:last-child {
 }
 
 /* Brand Carousel */
-/* line 90, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
+/* line 91, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
 .brand-logo-carousel .owl-item img {
   max-width: 100%;
   width: auto;
@@ -28893,7 +28899,7 @@ table.shop_attributes td:last-child {
   vertical-align: middle;
 }
 
-/* line 98, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
+/* line 99, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
 .brand-logo-carousel {
   list-style: none;
   margin: 0;
@@ -28901,28 +28907,28 @@ table.shop_attributes td:last-child {
   width: 100%;
 }
 
-/* line 105, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
+/* line 106, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
 .brand-logo-carousel .owl-item {
   text-align: center;
   vertical-align: middle;
 }
 
-/* line 110, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
+/* line 111, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
 .brand-logo-carousel .brand-item {
   text-align: center;
   vertical-align: middle;
 }
 
 @media only screen and (max-width: 1000px) {
-  /* line 116, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
+  /* line 117, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
   .nf-carousel-theme1 {
     overflow: hidden;
   }
-  /* line 119, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
+  /* line 120, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
   .nf-carousel-theme1:hover .owl-next {
     right: 5px;
   }
-  /* line 122, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
+  /* line 123, /Users/nmereus/repo/fleetguard-ryder/sass/global/_slider.scss */
   .nf-carousel-theme1:hover .owl-prev {
     left: 5px;
   }
@@ -29961,12 +29967,12 @@ ul#shipping_method {
 }
 
 /* line 107, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
-#profileForm.is-readonly .btn-save {
+#profileForm .is-readonly .btn-save {
   display: none;
 }
 
 /* line 111, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
-#profileForm.is-readonly .input-md[disabled] {
+#profileForm .is-readonly .input-md[disabled] {
   cursor: text;
   background-color: #fff;
   border-color: transparent !important;
@@ -29975,7 +29981,7 @@ ul#shipping_method {
 }
 
 /* line 121, /Users/nmereus/repo/fleetguard-ryder/sass/pages/_my_account.scss */
-#profileForm.is-editing .btn-edit {
+#profileForm .is-editing .btn-edit {
   display: none !important;
 }
 
