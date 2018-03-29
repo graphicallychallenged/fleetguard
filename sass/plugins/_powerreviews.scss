@@ -1,13 +1,13 @@
 /* Category display */
 .pr_snippet_category .pr-snippet-wrapper {
     border: none;
-    background: none;
+    background: none !important;
     width: auto;
 }
 
 .pr_snippet_category .pr-snippet-stars {
     border: none !important;
-    background: none;
+    background: none !important;
 }
 
 .pr_snippet_category .pr-snippet-rating-decimal {
@@ -21,8 +21,8 @@
 }
 
 .pr_snippet_category .pr-snippet-read-write {
-    border: none !important;;
-    background: none;
+    border: none !important;
+    background: none !important;
     display: none;
 }
 
@@ -41,7 +41,7 @@
 /* Product display */
 .pr_snippet_product .pr-snippet-wrapper {
     border: none;
-    background: none;
+    background: none !important;
     width: auto;
 }
 
@@ -71,7 +71,7 @@
                         text-align: left;
                                 margin-top: 0;
                         padding-top: 4px;  /* mixing px's w/ em's b/c of IE6 */
-                        font-size:10px !important;
+                        font-size:8px !important;
                         }
 
 .pr_snippet_product .pr-snippet-read-reviews {
@@ -102,6 +102,7 @@
 
   .pr-snippet-stars {
       border:none !important;
+      padding: 0px !important;
   }
    
     .pr-snippet-stars .pr-stars-small, .pr-modal-container .pr-stars {
@@ -121,7 +122,7 @@
         }
         .pr-snippet-write-first-review{
             p{
-                font-size:10px !important;
+                font-size:8px !important;
             }                
        }
     
