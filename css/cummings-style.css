@@ -26131,7 +26131,7 @@ img.tp-caption {
   -o-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background-image: url("../img/bg/addedtocart_popup_bg.png");
+  background-image: url("../img/bg/session_popup_bg.png");
   background-position: top right;
   background-repeat: no-repeat;
 }
